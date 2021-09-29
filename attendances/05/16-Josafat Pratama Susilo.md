@@ -43,7 +43,7 @@ bil = input.nextInt();
 
     Masukkan sebuah bilangan: 7
 
->Kode diatas bertujuan untuk menyimpan input user ke dalam variabel ```bil``` yang bertipe data integer. Diawali dengan import dan menginisialisasi ```Scanner```  yang nantinya dipakai untuk menyimpan variabel.
+>Kode diatas berfungsi untuk menyimpan input user ke dalam variabel ```bil``` yang bertipe data integer. Diawali dengan import dan menginisialisasi ```Scanner```  yang nantinya digunakan untuk menyimpan variabel.
 
 
 3. Buatlah struktur kondisi untuk mengecek apakah bilangan tersebut merupakan bilangan genap atau ganjil
@@ -62,7 +62,7 @@ if(bil%2 == 0){
 
     Bilangan Ganjil
 
->Kode diatas bertujuan untuk melakukan pemilihan atau percabangan. Dengan pengkondisian apakah variabel ```bil``` bila dilakukan operasi modulus dengan bilangan dua menghasilkan nilai 0 atau bukan. Bila hasilnya adalah 0 maka akan ada output yang menyatakan bahwa variabel ```bil``` adalah bilangan genap, sebaliknya jika bukan 0 maka akan ada output yang menyatakan bahwa variabel ```bil``` adalah bilangan ganjil. Operasi modulus adalah operasi yang menghasilkan sisa dari pembagian, jadi apabila sebuah bilangan dilakukan operasi modulus dengan 2 hasilnya adalah 0 alias habis dibagi dengan bilangan 2 maka bilangan tersebut adalah bilangan genap.
+>Kode diatas berfungsi untuk melakukan pemilihan atau percabangan. Dengan pengkondisian apakah variabel ```bil``` bila dilakukan operasi modulus dengan bilangan dua menghasilkan nilai 0 atau bukan. Bila hasilnya adalah 0 maka akan ada output yang menyatakan bahwa variabel ```bil``` adalah ```"Bilangan Genap"```, sebaliknya jika bukan 0 maka akan ada output yang menyatakan bahwa variabel ```bil``` adalah ```"Bilangan Ganjil"```. Operasi modulus adalah operasi yang menghasilkan sisa dari pembagian, jadi apabila sebuah bilangan dilakukan operasi modulus dengan 2 hasilnya adalah 0 alias habis dibagi dengan bilangan 2 maka bilangan tersebut adalah bilangan genap.
 
 ##### Pertanyaan
 1. Modifikasi program diatas dibagian struktur pemilihannya sehingga menjadi sebagai berikut:
