@@ -29,7 +29,7 @@ Mahasiswa mampu menyelesaikan permasalahan/studi kasus menggunakan sintaks pemil
 
 2. Tambahkan library Scanner, deklarasi Scanner, dan buat variabel bil untuk menampung data yang diinput melalui keyboard
 
-    ![](images/03.png)
+    ![](images/02.png)
 
 
 ```Java
@@ -52,7 +52,7 @@ Perintah **System.out.print("Masukkan sebuah bilangan: ");** menampilkan kalimat
 
 3. Buatlah struktur kondisi untuk mengecek apakah bilangan tersebut merupakan bilangan genap atau ganjil
 
-    ![](images/04.png)
+    ![](images/03.png)
 
 
 ```Java
@@ -72,7 +72,7 @@ if(bil % 2 == 0){
 ##### Pertanyaan
 1. Modifikasi program diatas dibagian struktur pemilihannya sehingga menjadi sebagai berikut:
 
-    ![](images/05.png)
+    ![](images/04.png)
 
 
 ```Java
@@ -100,7 +100,7 @@ Kode di atas adalah source code menggunakan pemilihan ternary operator. (bil % 2
 
 + Buatlah sebuah variabel nilai untuk menyimpan inputan dari keyboard
 
-    ![](images/06.png)
+    ![](images/05.png)
 
 
 ```Java
@@ -117,7 +117,7 @@ nilai = input.nextInt();
 
 + Tambahkan sebuah kondisi untuk mengecek input pada variabel nilai
 
-    ![](images/07.png)
+    ![](images/06.png)
 
 
 ```Java
@@ -236,7 +236,7 @@ Perintah **System.out.print("Masukkan Nilai Pertama: ");** dan **System.out.prin
 + Buatlah deklarasi `Scanner`
 + Buat variabel umur bertipe `int`
 
-    ![](images/08.png)
+    ![](images/07.png)
 
 
 ```Java
@@ -253,7 +253,7 @@ umur = input.nextInt();
 
 + Kode untuk melakukan pengecekan variabel `umur`
 
-    ![](images/09.png)
+    ![](images/08.png)
 
 
 ```Java
@@ -284,7 +284,7 @@ else
 1. Deklarasikan Scanner
 1. Buatlah variabel-variabel berikut
 
-    ![](images/10.png)
+    ![](images/09.png)
 
 
 ```Java
@@ -299,7 +299,7 @@ char operator;
 
 3. Kode program untuk meminta inputan dari keyboard
 
-    ![](images/11.png)
+    ![](images/10.png)
 
 
 ```Java
@@ -326,7 +326,7 @@ operator = sc.next().charAt(0);
 
 4. Kode di bawah ini untuk melakukan pengecekan operator yang digunakan sebelum dilakukan operasi aritmatika
 
-    ![](images/12.png)
+    ![](images/11.png)
 
 
 ```Java
@@ -376,7 +376,7 @@ source code di atas adalah kondisi SWITCH CASE, percabangan kode program dimana 
 1. Buatlah program untuk menginputkan dua buah bilangan bulat, kemudian mencetak salah satu bilangan yang nilainya terbesar.
 2. Perhatikan flowchart berikut ini:
 
-![](images/02.png)
+![](images/12.png)
 
 > Buatlah program sesuai dengan flowchart diatas!
 
