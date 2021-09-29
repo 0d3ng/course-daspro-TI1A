@@ -43,7 +43,7 @@ bil = input.nextInt();
 
     Masukkan sebuah bilangan: 7
 
->Kode diatas berfungsi untuk menyimpan input user ke dalam variabel ```bil``` yang bertipe data integer. Diawali dengan import dan menginisialisasi ```Scanner```  yang nantinya digunakan untuk menyimpan variabel.
+>Kode diatas berfungsi untuk menyimpan input user ke dalam variabel ```bil``` yang bertipe data integer. Diawali dengan import dan menginisialisasi ```Scanner```  yang nantinya digunakan untuk menyimpan variabel. Lalu kita memasukkan bilangan 7.
 
 
 3. Buatlah struktur kondisi untuk mengecek apakah bilangan tersebut merupakan bilangan genap atau ganjil
