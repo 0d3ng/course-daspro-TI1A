@@ -44,7 +44,7 @@ bil = input.nextInt();
     Masukkan sebuah bilangan: 3
 
 
-p
+powkokwokwo
 
 3. Buatlah struktur kondisi untuk mengecek apakah bilangan tersebut merupakan bilangan genap atau ganjil
 
