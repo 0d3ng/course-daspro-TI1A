@@ -11,6 +11,7 @@ Mahasiswa mampu menyelesaikan permasalahan/studi kasus menggunakan sintaks pemil
 + Browser(chrome, firefox, safari)
 + Koneksi internet
 
+
 ### Praktikum
 
 #### Percobaan 1 : Penggunaan if
