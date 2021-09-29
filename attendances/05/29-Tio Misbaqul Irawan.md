@@ -45,8 +45,9 @@ bil = input.nextInt();
     Masukan sebuah bilangan: 290
 
 
-> Kode di atas mengimport Scanner, kemudian membuat sebuah scanner untuk mendapatkan user input yang nantinya akan disimpan di variable bil
+> Kode di atas mengimport java.util.Scanner, kemudian membuat sebuah scanner untuk mendapatkan user input yang nantinya akan disimpan di variable bil
 
+---
 
 3. Buatlah struktur kondisi untuk mengecek apakah bilangan tersebut merupakan bilangan genap atau ganjil
 
@@ -67,6 +68,8 @@ if(bil % 2 == 0) {
 
 > Outputnya adalah bilangan Genap karena variabel bil bernilai 290 yang jika dibagi 2 hasilnya tidak bersisa
 
+---
+
 ##### Pertanyaan
 1. Modifikasi program diatas dibagian struktur pemilihannya sehingga menjadi sebagai berikut:
 
@@ -82,6 +85,8 @@ System.out.println(output);
 
 
 > Outputnya adalah bilangan genap karena pada dasarnya kode ini sama dengan kode di atas, hanya saja menggunakan ternary operator
+
+---
 
 2. Jalankan dan amatilah hasilnya!
 3. Jelaskan mengapa output program yang dimodifikasi sama dengan output program sebelum dimodifikasi!
@@ -106,6 +111,8 @@ nilai = input.nextInt();
 
 > Kode diatas membuat sebuah variable nilai dan kemudian meminta input ke user yang akan disimpan di variable nilai
 
+---
+
 + Tambahkan sebuah kondisi untuk mengecek input pada variabel nilai
 
     ![](images/07.png)
@@ -124,12 +131,9 @@ System.out.println("Hasil akhir nilai adalah " + nilai);
     Hasil akhir nilai adalah 331
 
 
-> Hasil akhir adalah 331 karena variable nilai berisi 321, artinya lebih dari 100 dan akhirnya nilainya ditambah dengan 10. 321 + 10 = 331
+> Hasil akhir adalah 331 karena variable nilai berisi 321, artinya lebih dari 100 dan akhirnya nilainya ditambah dengan 10. 321 + 10 = 331. a += b sama dengan a = a + b
 
-
-```Java
-
-```
+---
 
 + Jalankan program. Amati apa yang terjadi!
 
@@ -165,6 +169,8 @@ umur =  input.nextInt();
 
 > Kode di atas membuat variable umur, kemudian meminta user input yang akan disimpan di  variable umur
 
+---
+
 + Kode untuk melakukan pengecekan variabel `umur`
 
     ![](images/09.png)
@@ -186,7 +192,9 @@ else
     Dewasa
 
 
-> Output dari kode di atas adalah Dewasa karena variable umur bernilai 19 atau kurang dari 60 dan 45 tapi lebih besar dari 17
+> Output dari kode di atas adalah Dewasa karena variable umur bernilai 19 yang berarti kurang dari 60 dan 45 tapi lebih besar dari 17. Meskipun umur lebih besar dari 5, kode untuk umur > 5 tidak dijalankan, karena if sudah menemukan kondisi yang sesuai.
+
+---
 
 + Jalankan program dan amati apa yang terjadi!
 
@@ -229,6 +237,8 @@ operator = sc.next().charAt(0);
 
 > Kode diatas meminta inputan user untuk mengisi variable yang telah dibuat tadi
 
+---
+
 4. Kode di bawah ini untuk melakukan pengecekan operator yang digunakan sebelum dilakukan operasi aritmatika
 
     ![](images/12.png)
@@ -260,7 +270,9 @@ switch(operator) {
     4.0 + 5.0 = 9.0
 
 
-> Output dari kode diatas dikarenakan operator yang dimasukan adalah +, oleh karena itu, perintah switch akan menjalankan kode di case '+' dimana akan dilakukan penjumlahan dan juga  menampilkanya menggunakan System.out.println()
+> Output dari kode diatas dikarenakan operator yang dimasukan adalah +, oleh karena itu, perintah switch akan menjalankan kode di case '+' dimana akan dilakukan penjumlahan dan juga  menampilkanya menggunakan System.out.println(). Kode di bawahnya tidak ikut dijalankan karena terdapat penggunakan break;
+
+---
 
 5. Jalankan program. Amati apa yang terjadi!
 
@@ -315,6 +327,8 @@ Diskon      :240000.0
 Total Bayar :2160000.0
 ```
 
+### Jawaban
+
 1. Buatlah program untuk menginputkan dua buah bilangan bulat, kemudian mencetak salah satu bilangan yang nilainya terbesar.
 
 
@@ -338,6 +352,9 @@ if(a > b) {
     B: 1
     7
 
+> Penjelasan: Buat scanner untuk  mendapat user input, kemudian minta user input untuk nilai A dan B, setelah itu gunakan perintah if untuk melakukan pengecekan nilai mana yang lebih besar.
+
+---
 
 2. Perhatikan flowchart berikut ini:
     Buatlah program sesuai dengan flowchart diatas!
@@ -359,15 +376,27 @@ if(umur >= 17) {
     umur: 17
     Boleh berkendara
 
+> Penjelasan: Buat scanner untuk mengambil input dari user, kemudian cek jika umur user >= 17. Jika iya, tampilkan boleh berkendara, jika tidak, tampilkan tidak boleh berkendara.
+
+---
 
 3. Pada akhir semester seorang dosen menghitung nilai akhir dari mahasiswa yang terdiri dari nilai uas, uts, kuis, dan tugas. Nilai akhir didapatkan dari 40% nilai uas, 30% nilai uts, 10% nilai kuis, dan 20% nilai tugas. Jika nilai akhir dari mahasiswa dibawah 65 maka mahasiswa tersebut akan mendapatkan remidi. Buatlah program untuk membantu mengetahui mahasiswa yang mendapatkan remidi berdasarkan nilai akhir yang didapatkannya!
 
 
 ```Java
-Scanner sc =  new Scanner(System.in);
+Scanner sc = new Scanner(System.in);
 
-System.out.print("Nilai akhir: ");
-int nilaiAkhir = sc.nextInt();
+System.out.print("Nilai UAS: ");
+int uas = sc.nextInt();
+System.out.print("Nilai UTS: ");
+int uts = sc.nextInt();
+System.out.print("Nilai Kuis: ");
+int kuis = sc.nextInt();
+System.out.print("Nilai Tugas: ");
+int tugas = sc.nextInt();
+
+float nilaiAkhir = (uas * 40f / 100f) + (uts * 30f / 100f) + (kuis * 10f / 100f) + (tugas * 20f / 100f);
+
 
 if(nilaiAkhir < 65) {
     System.out.println("Remidi");
@@ -376,9 +405,16 @@ if(nilaiAkhir < 65) {
 }
 ```
 
-    Nilai akhir: 65
+    Nilai UAS: 98
+    Nilai UTS: 81
+    Nilai Kuis: 96
+    Nilai Tugas: 87  
+    nilaiAkhir: 90.5
     Tidak remidi
 
+> Penjelasan: membuat sebuah scanner, kemudian meminta user untuk input nilai uas, uts, kuis dan tugas. Setelah itu menjumlahkan seluruhnya berdasarkan bobot yang telah ditentukan. Hasil penjumlahanya dicek untuk menentukan status remidinya berdasarkan kriteria nilaiAkhir < 65
+
+---
 
 4. Sebuah toko memberikan diskon kepada pelanggannya dengan ketentuan sebagai berikut:
 
@@ -455,7 +491,4 @@ Scanner sc = new Scanner(System.in);
     Total Bayar		: 2160000.0
 
 
-
-```Java
-
-```
+> Penjelasan: Membuat sebuah scanner, kemudian meminta user input barang jumlah barang belanjaan beserta harganya. Kemudian totalkan harganya dengan jumlah yang dibeli, setelah itu tentukan diskon  berdasarkan total pembelian. Jika sudah tampilkan semua data yang sudah dikalkulasi
