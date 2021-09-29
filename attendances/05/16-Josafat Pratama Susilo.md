@@ -29,7 +29,7 @@ Mahasiswa mampu menyelesaikan permasalahan/studi kasus menggunakan sintaks pemil
 
 2. Tambahkan library Scanner, deklarasi Scanner, dan buat variabel bil untuk menampung data yang diinput melalui keyboard
 
-    ![](images/02.png)
+    ![](images/03.png)
 
 
 ```Java
@@ -43,12 +43,12 @@ bil = input.nextInt();
 
     Masukkan sebuah bilangan: 7
 
->Kode diatas berfungsi untuk menyimpan input user ke dalam variabel ```bil``` yang bertipe data integer. Diawali dengan import dan menginisialisasi ```Scanner```  yang nantinya digunakan untuk menyimpan variabel.
+>Kode diatas berfungsi untuk menyimpan input user ke dalam variabel ```bil``` yang bertipe data integer. Diawali dengan import dan menginisialisasi ```Scanner```  yang nantinya digunakan untuk menyimpan variabel. Lalu kita memasukkan bilangan 7.
 
 
 3. Buatlah struktur kondisi untuk mengecek apakah bilangan tersebut merupakan bilangan genap atau ganjil
 
-    ![](images/03.png)
+    ![](images/04.png)
 
 
 ```Java
@@ -67,7 +67,7 @@ if(bil%2 == 0){
 ##### Pertanyaan
 1. Modifikasi program diatas dibagian struktur pemilihannya sehingga menjadi sebagai berikut:
 
-    ![](images/04.png)
+    ![](images/05.png)
 
 
 ```Java
@@ -78,7 +78,7 @@ System.out.println(output);
 
     Bilangan Ganjil
 
->Kode diatas merupakan penerapan dari ternary operator. Bila kita ubah ke bahasa manusia, sebenarnya ternary operator itu mudah dipahami karena struktur kalimatnya sederhana. Contohnya adalah Apakah (kondisi benar atau salah) ? jika iya maka lakukan hal ini : jika salah lakukan hal ini. Pada kode diatas kita melakukan inisialisasi variabel ```output``` dan melakukan pengecekan apakah variabel ```bil``` bila dilakukan operasi modulus dengan 2 hasilnya adalah 0, bila iya maka variabel ```output``` akan berisi nilai ```"Bilangan Genap"```, jika salah maka akan berisi nilai ```"Bilangan Ganjil"```
+>Kode diatas merupakan penerapan dari ternary operator. Bila kita ubah ke bahasa manusia, sebenarnya ternary operator itu mudah dipahami karena struktur kalimatnya sederhana. Contohnya adalah Apakah (kondisi benar atau salah) ? jika iya maka lakukan hal ini : jika salah lakukan hal ini. Pada kode diatas kita melakukan inisialisasi variabel ```output``` dan melakukan pengecekan apakah variabel ```bil``` bila dilakukan operasi modulus dengan 2 hasilnya adalah 0, bila iya maka variabel ```output``` akan berisi nilai ```"Bilangan Genap"```, jika salah maka akan berisi nilai ```"Bilangan Ganjil"```. Pada kode diatas menhasilkan output ```"Bilangan Ganjil"``` karena 7 modulus 2 adalah 1 alias 7 dibagi 2 sisa 1.
 
 
 2. Jalankan dan amatilah hasilnya!
@@ -92,7 +92,7 @@ System.out.println(output);
 
 + Buatlah sebuah variabel nilai untuk menyimpan inputan dari keyboard
 
-    ![](images/05.png)
+    ![](images/06.png)
 
 
 ```Java
@@ -109,7 +109,7 @@ nilai = input.nextInt();
 
 + Tambahkan sebuah kondisi untuk mengecek input pada variabel nilai
 
-    ![](images/06.png)
+    ![](images/07.png)
 
 
 ```Java
@@ -124,7 +124,7 @@ System.out.println("Hasil akhir nilai adalah "+nilai);
 
     Hasil akhir nilai adalah -8
 
->Kode diatas melakukan pengecekan apakah nilai yang diinputkan user pada variabel ```nilai``` lebih atau sama dengan 100 atau tidak. Bila iya maka nilai tersebut akan dijumlahkan dengan 10 jika tidak maka nilai tersebut akan dikurangi dengan 10 lalu di print hasilnya.
+>Kode diatas melakukan pengecekan apakah nilai yang diinputkan user pada variabel ```nilai``` lebih atau sama dengan 100 atau tidak. Bila iya maka nilai tersebut akan dijumlahkan dengan 10 jika tidak maka nilai tersebut akan dikurangi dengan 10 lalu di print hasilnya. Pada kode diatas menghasilkan nilai -8 karena variabel ```nilai``` bernilai 2 tidak lebih dari 100 lalu dikurangi 10 maka menghasilkan nilai -8.
 
 
 + Jalankan program. Amati apa yang terjadi!
@@ -173,7 +173,7 @@ System.out.println("Hasil akhir nilai adalah "+avg);
 + Buatlah deklarasi `Scanner`
 + Buat variabel umur bertipe `int`
 
-    ![](images/07.png)
+    ![](images/08.png)
 
 
 ```Java
@@ -190,7 +190,7 @@ umur = input.nextInt();
 
 + Kode untuk melakukan pengecekan variabel `umur`
 
-    ![](images/08.png)
+    ![](images/09.png)
 
 
 ```Java
@@ -209,7 +209,11 @@ else
 
     Dewasa
 
->Kode program di atas berfungsi untuk melakukan pengecekan variabel ```umur``` bila memenuhi kondisi tertentu. Dimulai dari apabila nilai variabel ```umur``` lebih dari 60 atau tidak, bila benar maka akan melakukan baris kode dalam scope ```if``` tersebut, bila tidak maka akan dilanjut ke pengkondisian kedua yaitu apakah variabel ```umur``` lebih dari 45 atau tidak dan jika benar akan melakukan baris kode dalam scope ```else if``` bila tidak maka akan dilanjut ke pengkondisian berikutnya sampai ke scope ```else``` yaitu variabel ```umur``` tidak lebih dari 5. Urutan pengecekkan merupakan salah satu poin yang krusial juga, apabila kita melakukan pengecekkan variabel ```umur``` dari yang kecil maka akan ada kemungkinan kesalahan. Contohnya bila kita melakukan pengecekkan apakah variabel ```umur``` lebih dari 5 terlebih dahulu dan ternyata umurnya 81 yang seharusnya adalah ```"Lansia"``` malah ter-output ```"Balita"```
+>Kode program di atas berfungsi untuk melakukan pengecekan variabel ```umur``` bila memenuhi kondisi tertentu. Dimulai dari apabila nilai variabel ```umur``` lebih dari 60 atau tidak, bila benar maka akan melakukan baris kode dalam scope ```if``` tersebut, bila tidak maka akan dilanjut ke pengkondisian kedua yaitu apakah variabel ```umur``` lebih dari 45 atau tidak dan jika benar akan melakukan baris kode dalam scope ```else if``` bila tidak maka akan dilanjut ke pengkondisian berikutnya sampai ke scope ```else``` yaitu variabel ```umur``` tidak lebih dari 5.
+><br>
+><br/>Kode diatas menghasilkan output ```"Dewasa"``` karena umur lebih dari 17 dan kurang dari 60 serta 45
+><br>
+><br> Urutan pengecekkan merupakan salah satu poin yang krusial juga, apabila kita melakukan pengecekkan variabel ```umur``` dari yang kecil maka akan ada kemungkinan kesalahan. Contohnya bila kita melakukan pengecekkan apakah variabel ```umur``` lebih dari 5 terlebih dahulu dan ternyata umurnya 81 yang seharusnya adalah ```"Lansia"``` malah ter-output ```"Balita"```
 
 
 + Jalankan program dan amati apa yang terjadi!
@@ -221,7 +225,7 @@ else
 1. Deklarasikan Scanner
 1. Buatlah variabel-variabel berikut
 
-    ![](images/09.png)
+    ![](images/10.png)
 
 
 ```Java
@@ -235,7 +239,7 @@ char operator;
 
 3. Kode program untuk meminta inputan dari keyboard
 
-    ![](images/10.png)
+    ![](images/11.png)
 
 
 ```Java
@@ -257,7 +261,7 @@ operator = sc.next().charAt(0);
 
 4. Kode di bawah ini untuk melakukan pengecekan operator yang digunakan sebelum dilakukan operasi aritmatika
 
-    ![](images/11.png)
+    ![](images/12.png)
 
 
 ```Java
@@ -287,6 +291,7 @@ switch(operator){
     2.0 * 4.0 = 8.0
 
 >Kode tersebut berfungsi untuk melakukan pengecekan menggunakan switch case. Kita melakukan pengecekkan pada variabel ```operator``` apakah ada dari case-case tersebut yang sama dengan nilai variabel ```operator``` dan bila ada, maka akan dijalankan kode program di dalam scope ```case '':``` tersebut sampai baris kode ```break;``` bila tidak ada yang sama maka akan dijalaknan kode program pada scope ```default:``` tersebut.
+><br>Kode program tersebut menghasilkan nilai 8.0 karena pada saat inputan kita memilih operator ```"*"``` yang masuk ke dalam ```case '*':``` maka 2.0 akan dikalikan dengan 4.0 yang menghasilkan 8.0 
 
 
 5. Jalankan program. Amati apa yang terjadi!
@@ -311,7 +316,7 @@ switch(operator){
 1. Buatlah program untuk menginputkan dua buah bilangan bulat, kemudian mencetak salah satu bilangan yang nilainya terbesar.
 2. Perhatikan flowchart berikut ini:
 
-![](images/12.png)
+![](images/02.png)
 
 > Buatlah program sesuai dengan flowchart diatas!
 
@@ -371,7 +376,7 @@ System.out.println("Bilangan Terbesar: " + bilanganTerbesar);
     Masukkan Bilangan Bulat Kedua: 5
     Bilangan Terbesar: 5
 
-
+>Kode diatas diawali dengan menginisialisasi variabel ```bilangan1, bilangan2, bilanganTerbesar``` bertipe integer serta import dan menginisialisasi Scanner untuk menerima inputan. Lalu kita menyimpan inputan user ke dalam variabel ```bilangan1``` dan ```bilangan2```. Setelah itu kita menggunakan ternary operator untuk menentukan apakah nilai ```bilangan1``` lebih besar dari nilai ```bilangan2```, lalu dari situ ditentukan bilangan mana yang lebih besar dan memasukkannya ke dalam variabel ```bilanganTerbesar``` yang akan pada akhirnya di outputkan.
 
 Nomor 2:
 
@@ -395,7 +400,7 @@ if(umur >= 17){
     Masukkan umur kamu: 18
     Boleh berkendara
 
-
+>Kode diatas diawali dengan menginisialisasi variabel ```umur``` bertipe integer serta import dan menginisialisasi Scanner untuk menerima inputan. Lalu kita menyimpan inputan user ke dalam variabel ```umur```. Setelah itu kita melakukan pengecekkan dengan ```if``` apakah nilai umur lebih dari sama dengan 17. Bila iya maka akan output ```"Boleh berkendara"``` bila tidak maka akan output ```"Tidak boleh berkendara"```.
 
 Nomor 3:
 
@@ -429,7 +434,7 @@ if(nilaiAkhir < 65){
     Nilai akhir mahasiswa: 60.0
     Mahasiswa Remidi
 
-
+>Kode diatas diawali dengan menginisialisasi variabel ```nilaiAkhir, nilaiUas, nilaiUts, nilaiKuis, nilaiTugas``` bertipe float serta import dan menginisialisasi Scanner untuk menerima inputan. Lalu kita mengalikan inputan dengan masing-masing desimal dari aturan nilai yang ada, contohnya ```nilaiTugas = 0.2F * in.nextFloat()```, diketahui bahwa nilai tugas diambil 20%, bentuk desimalnya 0.2. Kemudian kita mengalikan 0.2 tersebut dengan nilai inputan dan memasukkan hasilnya ke dalam variabel ```nilaiTugas```. Mengapa ada huruf "F" di belakang desimal? itu untuk menunjukkan bahwa 0.2 merupakan bilangan float. Setelah kita melakukan operasi masing-masing nilai, kita lalu mengakumulasi nilainya menjadi ```nilaiAkhir``` dan melakukan output nilai akhir tersebut. Setelah itu kita melakukan pengecekkan apakah variabel ```nilaiAkhir``` kurang dari 65, jika iya maka akan output ```"Mahasiswa Remidi"``` jika tidak maka tidak akan melakukan output.
 
 Nomor 4:
 
@@ -473,7 +478,7 @@ System.out.println("Barang C\t\t" + hargaC + "\t\t" + jmlC + "\t\t" + totalC);
 
 //Hitung Total Pembelian sebelum diberi diskon
 totalBeli = totalA + totalB + totalC;
-System.out.println("Total\t:" + totalBeli);
+System.out.println("Total\t\t:" + totalBeli);
 
 //Hitung Diskon
 if(totalBeli > 1000000){
@@ -485,7 +490,7 @@ if(totalBeli > 1000000){
 }else{
     diskon = 0;
 }
-System.out.println("Diskon\t:" + diskon);
+System.out.println("Diskon\t\t:" + diskon);
 
 //Hitung Total yang perlu dibayar setelah diberi diskon
 totalBayar = totalBeli - diskon;
@@ -505,12 +510,17 @@ System.out.println("Total Bayar\t:" + totalBayar);
     Barang A		100000		10		1000000
     Barang B		250000		5		1250000
     Barang C		150000		1		150000
-    Total	:2400000
-    Diskon	:240000.0
+    Total	    :2400000
+    Diskon	    :240000.0
     Total Bayar	:2160000.0
 
-
-
+>Kode diatas diawali dengan menginisialisasi variabel ```hargaA, jmlA, totalA, hargaB, jmlB, totalB, hargaC, jmlC, totalC, totalBeli``` bertipe integer dan variabel ```diskon, totalBayar``` bertipe float serta import dan menginisialisasi Scanner untuk menerima inputan.
+><br>
+>Lalu kita memasukkan inputan user ke dalam variabel yang sesuai, harga barang A ke dalam variabel ```hargaA``` lalu jumlah barang A ke dalam variabel ```jmlA```. Setelah itu kita mengakumulasikan jumlah barang dan harga tersebut dan memasukkan total harga barang A kedalam variabel ```totalA```. Langkah tadi juga dilakukan sama untuk barang B dan barang C. Setelah itu kita melakukan output variabel tadi dalam bentuk struk total. Lalu kita mengakumulasikan total harga barang A, B dan C dan memasukkan nilainya ke variabel ```totalBeli``` serta menampilkanya dalam bentuk output. 
+><br>
+>Setelah itu kita melakukan perhitungan diskon dengan melakukan pengecekan terlebih dahulu kepada variabel ```totalBeli```, jika ```totalBeli``` lebih dari 1000000 maka ktia menghitung diskon dengan rumus 10% dari ```totalBeli``` atau 0.1F dari ```totalBeli```, jika tidak lebih maka akan dilakukan pengecekan apakah lebih 500000, jika iya maka akan dihitung berdasar ketentuan diskon yang ada. Akan dicek terus sampai jika ```totalBeli``` tidak lebih dari 200000 yang berarti pembeli tidak mendapatkan diskon alias ```diskon = 0;```. Setelah itu ditampilkan jumlah diskonnya dalam bentuk output.
+><br>
+>Yang terakhir, kita menghitung ```totalBayar``` dengan mengurangi ```totalBeli``` dengan ```diskon``` untuk menentukan jumlah biaya yang harus dibayar pembeli dan menampilkannya dalam bentuk output.
 ```Java
 
 ```
