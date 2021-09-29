@@ -368,6 +368,8 @@ System.out.println(bilangan2);
     12
 
 
+Penjelasan: kode program tersebut digunakan untuk membandingkan 2 bilangan. Cara kerjanya yaitu menginputkan kedua bilangan, lalu menyeleksi, dan mengeluarkan output bilangan yang jumlahnya paling besar.
+
 
 ```Java
 //Nomor 2
@@ -386,6 +388,9 @@ if(umur >= 17){
     Masukkan umur: 18
     Boleh berkendara
 
+
+Penjelasan: 
+Kode program tersebut berfungsi untuk menentukan umur berapa warga negara boleh berkendara. Cara kerjanya yaitu menginputkan umur, lalu menyeleksinya, jika umur kurang dari 17 akan mengeluarkan output tidak boleh berkendara. Jika umur 17 keatas maka akan mengeluarkan output boleh berkendara.
 
 
 ```Java
@@ -415,6 +420,8 @@ if(total <= 65){
     Masukkan Nilai Tugas: 100
     Remidi
 
+
+Penjelasan: Kode program tersebut berfungsi untuk menentukan remidi atau tidaknya siswa. Cara kerjanya yaitu menginput 4 nilai, yaitu uas, uts, kuis, dan tugas. Lalu membaginya di setiap bagian, misal uas hanya mengambil 40% nilainya, uts hanya mengambil 30%, kuis hanya diambil 10%, serta tugas diambil 20%. Setelah itu nilai akan diseleksi, jika nilai 65 keatas, maka akan memunculkan output tidak remidi, namun jika nilai dibawah 65, maka akan memunculkan output remidi.
 
 
 ```Java
@@ -451,14 +458,18 @@ if(totalbarang > 1000000)
 System.out.println("Diskon     :" + totalbarang * 10 / 100);
 else if(totalbarang > 500000)
 System.out.println("Diskon     :" + totalbarang * 5 / 100);
-else
+else if(totalbarang > 200000)
 System.out.println("Diskon     :" + totalbarang * 2 / 100);
+else
+System.out.println("Diskon     : 0");
 if(totalbarang > 1000000)
 System.out.println("Total Bayar:" + (totalbarang - totalbarang * 10 / 100));
 else if(totalbarang > 500000)
 System.out.println("Total Bayar:" + (totalbarang - totalbarang * 5 / 100));
-else
+else if(totalbarang > 200000)
 System.out.println("Total Bayar:" + (totalbarang - totalbarang * 2 / 100));
+else
+System.out.println("Total Bayar:" + totalbarang);
 ```
 
     Masukkan Harga Barang A: 100000
@@ -481,7 +492,4 @@ System.out.println("Total Bayar:" + (totalbarang - totalbarang * 2 / 100));
 
 
 
-
-```Java
-
-```
+Penjelasan: Kode program tersebut digunakan untuk menghitung diskon pada belanjaan. Cara kerjanya yaitu memasukkan input Barang A, Barang B, dan Barang C, baik jumlah barang maupun harga barang. Selanjutnya akan menghasilkan total harga pada setiap barang berdasarkan harga barang dan jumlah yang dibeli. Selanjutnya semua harga barang akan ditotal. Diskon akan muncul berdasarkan harga barang. Jika harga barang diatas 1000000, maka akan memunculkan diskon 10%, jika harga barang diatas 500000, maka akan memunculkan diskon 5%, jika harga barang diatas 200000, maka akan memunculkan diskon 2%, namun jika barang dibawah angka-angka tersebut, maka tidak ada diskon. Setelah menentukan diskon maka harga total pada barang akan dikurangkan dengan harga total barang * diskon. lalu akan memunculkan output berapa harga total final yang harus dibayar pelanggan.
