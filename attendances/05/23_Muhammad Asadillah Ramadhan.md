@@ -350,12 +350,12 @@ Total Bayar :2160000.0
 //Nomor 1
 import java.util.Scanner;
 Scanner input = new Scanner(System.in);
-int bilangan1, bilangan2;
+int bil1, bil2;
 System.out.print("Masukkan bilangan pertama: ");
-bilangan1 = input.nextInt();
+bil1 = input.nextInt();
 System.out.print("Masukkan bilangan kedua: ");
-bilangan2 = input.nextInt();
-if(bilangan1 > bilangan2){
+bil2 = input.nextInt();
+if(bil1 > bil2){
 System.out.println(bilangan1);
 }else{
 System.out.println(bilangan2);
@@ -407,7 +407,7 @@ kuis = input.nextInt();
 System.out.print("Masukkan Nilai Tugas: ");
 tugas = input.nextInt();
 total = (uas * 4/10) + (uts * 3/10) + (kuis * 1/10) + (tugas * 2/10);
-if(total <= 65){
+if(total < 65){
     System.out.println("Remidi");
 }else{
     System.out.println("Tidak Remidi");
