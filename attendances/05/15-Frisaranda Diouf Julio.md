@@ -442,3 +442,4 @@ System.out.println("Total\t\t\t: " + total);
 System.out.println("Diskon\t\t\t: " + diskon);
 System.out.println("Total Bayar\t\t: " + (total - diskon));
 ```
+.
