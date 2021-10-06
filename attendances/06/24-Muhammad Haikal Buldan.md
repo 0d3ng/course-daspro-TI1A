@@ -519,13 +519,13 @@ import java.util.Scanner;
         System.out.print("\nBiaya Hidup Anda Rp "+biayaakhir);
         
     if (biayaakhir > 300000){
-      System.out.println("\nAnda tidak termasuk penduduk miskin");
+      System.out.println("\nAnda bukan penduduk miskin");
     } else {
-      System.out.println("\nAnda termasuk penduduk miskin");
+      System.out.println("\nAnda penduduk miskin");
     }
         
 } else {
-    System.out.println("Anda termasuk penduduk miskin");
+    System.out.println("Anda penduduk miskin");
 }
     
 } else {
@@ -533,9 +533,9 @@ import java.util.Scanner;
     status = input.nextLine();
     
      if (status.equalsIgnoreCase ("y")){
-        System.out.println("Anda tidak termasuk penduduk miskin");
+        System.out.println("Anda bukan penduduk miskin");
     } else {
-         System.out.println("Anda termasuk penduduk miskin");
+         System.out.println("Anda penduduk miskin");
     }
 }
 ```
@@ -546,5 +546,5 @@ import java.util.Scanner;
     Tanggungan Keluarga 	: 2
     
     Biaya Hidup Anda Rp 2000000
-    Anda tidak termasuk penduduk miskin
+    Anda bukan penduduk miskin
 
