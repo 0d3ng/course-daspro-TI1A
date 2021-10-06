@@ -179,7 +179,7 @@ gajiBersih = (int) (penghasilan - (penghasilan * pajak));
 // Jawaban pertanyaan
 1. Karena menggunakan variabel integer dimana integer hanya menampung bilangan bulat
 2. fungsinya yaitu agar angka yang dihasilkan menjadi bentuk integer (bilangan bulat serta memiliki range angka tertentu)
-3. yang terjadi yaitu menghitung gaji bersih pebisnis, fungsi dari equalsIgnoreCase adalah menyeleksi string yang akan disajikan sehingga menghasilkan hasil yang akurat
+3. yang terjadi yaitu menghitung gaji bersih pebisnis, fungsi dari equalsIgnoreCase adalah menyeleksi string yang akan disajikan dengan mengabaikan format huruf
 4. fungsi dari equals hampir sama dengan equalsIgnoreCase, bedanya yaitu equals akan menmperhatikan format penulisan hurufnya dimana huruf kapital dan huruf kecil dibedakan
 ```
 
