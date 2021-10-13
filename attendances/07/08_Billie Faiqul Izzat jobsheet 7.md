@@ -366,7 +366,7 @@ Contoh:
 ```Java
 // Ketik kode program disini
 Scanner sc = new Scanner(System.in);
-int bil, jmlBilGenap,int totalGenap = 0;
+int bil, jmlBilGenap,int totalGenap = 1;
 double avg;
 
 System.out.print("Masukkan angka : ");
@@ -429,6 +429,7 @@ angka=sc.nextInt();
                 
 int i = 1;
 do{
+    if (i == 5) continue;
 System.out.println(i);
 } while(++i <=angka);
 ```
