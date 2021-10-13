@@ -366,7 +366,7 @@ Contoh:
 ```Java
 // Ketik kode program disini
 Scanner sc = new Scanner(System.in);
-int bil, jmlBilGenap,int totalGenap = 1;
+int bil, jmlBilGenap,int totalGenap = 0;
 double avg;
 
 System.out.print("Masukkan angka : ");
@@ -393,8 +393,8 @@ for(int i = 1; i <= bil; i++) {
 
 avg = totalGenap / jmlBilGenap;
 
-System.out.print("\nHasil penjumlahan bilangan genap dari 1 sampai %d adalah %d\n", bil, totalGenap);
-System.out.print("Rata-rata bilangan genap dari 1 sampai %d adalah %.1f\n", bil, avg);
+System.out.printf("\nHasil penjumlahan bilangan genap dari 1 sampai %d adalah %d\n", bil, totalGenap);
+System.out.printf("Rata-rata bilangan genap dari 1 sampai %d adalah %.1f\n", bil, avg);
 
 ```
 
@@ -435,13 +435,11 @@ System.out.println(i);
 ```
 
     Masukkan angka : 
-    7
+    4
     1
     2
     3
     4
-    6
-    7
 
 
 3. Buatlah sebuah program yang menampilkan deret bilangan fibonacci sebagai berikut. Dimana bilangan yang terletak di sebelah kanan adalah hasil penjumlahan dari 2 bilangan sebelumnya
