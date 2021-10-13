@@ -11,6 +11,7 @@ Mahasiswa mampu menyelesaikan permasalahan/studi kasus menggunakan sintaks pemil
 + Browser(chrome, firefox, safari)
 + Koneksi internet
 
+
 ### Praktikum
 
 #### Percobaan 1 : Penggunaan if
@@ -29,7 +30,7 @@ Mahasiswa mampu menyelesaikan permasalahan/studi kasus menggunakan sintaks pemil
 
 2. Tambahkan library Scanner, deklarasi Scanner, dan buat variabel bil untuk menampung data yang diinput melalui keyboard
 
-    ![](images/02.png)
+    ![](images/03.png)
 
 
 ```Java
@@ -47,7 +48,7 @@ bil = input.nextInt();
 
 3. Buatlah struktur kondisi untuk mengecek apakah bilangan tersebut merupakan bilangan genap atau ganjil
 
-    ![](images/03.png)
+    ![](images/04.png) 
 
 
 ```Java
@@ -66,7 +67,7 @@ if(bil%2 == 0){
 ##### Pertanyaan
 1. Modifikasi program diatas dibagian struktur pemilihannya sehingga menjadi sebagai berikut:
 
-    ![](images/04.png)
+    ![](images/05.png)
 
 
 ```Java
@@ -91,7 +92,7 @@ System.out.println(output);
 
 + Buatlah sebuah variabel nilai untuk menyimpan inputan dari keyboard
 
-    ![](images/05.png)
+    ![](images/06.png)
 
 
 ```Java
@@ -107,7 +108,7 @@ nilai = input.nextInt();
 
 + Tambahkan sebuah kondisi untuk mengecek input pada variabel nilai
 
-    ![](images/06.png)
+    ![](images/07.png)
 
 
 ```Java
@@ -173,7 +174,7 @@ System.out.println("Hasil akhir rata-rata nilai adalah "+rata);
 + Buatlah deklarasi `Scanner`
 + Buat variabel umur bertipe `int`
 
-    ![](images/07.png)
+    ![](images/08.png)
 
 
 ```Java
@@ -189,7 +190,7 @@ umur = input.nextInt();
 
 + Kode untuk melakukan pengecekan variabel `umur`
 
-    ![](images/08.png)
+    ![](images/09.png)
 
 
 ```Java
@@ -219,7 +220,7 @@ else
 1. Deklarasikan Scanner
 1. Buatlah variabel-variabel berikut
 
-    ![](images/09.png)
+    ![](images/10.png)
 
 
 ```Java
@@ -232,7 +233,7 @@ char operator;
 
 3. Kode program untuk meminta inputan dari keyboard
 
-    ![](images/10.png)
+    ![](images/11.png)
 
 
 ```Java
@@ -253,7 +254,7 @@ operator = sc.next().charAt(0);
 
 4. Kode di bawah ini untuk melakukan pengecekan operator yang digunakan sebelum dilakukan operasi aritmatika
 
-    ![](images/11.png)
+    ![](images/12.png)
 
 
 ```Java
@@ -331,7 +332,7 @@ if(a > b){
 
 2. Perhatikan flowchart berikut ini:
 
-![](images/12.png)
+![](images/02.png)
 
 > Buatlah program sesuai dengan flowchart diatas!
 
