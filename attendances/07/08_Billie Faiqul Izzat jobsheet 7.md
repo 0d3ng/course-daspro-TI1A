@@ -435,11 +435,13 @@ System.out.println(i);
 ```
 
     Masukkan angka : 
-    4
+    7
     1
     2
     3
     4
+    6
+    7
 
 
 3. Buatlah sebuah program yang menampilkan deret bilangan fibonacci sebagai berikut. Dimana bilangan yang terletak di sebelah kanan adalah hasil penjumlahan dari 2 bilangan sebelumnya
