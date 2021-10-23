@@ -112,7 +112,7 @@ import java.util.Scanner;
 Menggunakan scanner untuk menginput data yang diperlukan, dengan tipe data yang digunakan adalah int, boolean, dan double. Seluruh data dimasukkan dan diisi. Kemudian sistem akan menghitung totalnya. 
 
 Seperti pada contoh: 
-seseorang memiliki usaha, dengan penghasilan pertahun Rp. 60.000.000, hingga muncul jumlah penghasilan akhir setelah pajak 15% dan memiliki harta kekayaan berupa mobil dengan harga jual 80.000.000 dan perhiasan berupa gelang dengan harga 3.000.000. Kemudian seseorang tersebut sudah berkeluarga, dan memiiki anak yang kuliah 1, sehingga pajaknya dipotong, dan muncul total harta kekayaan. 
+seseorang memiliki usaha, dengan penghasilan pertahun Rp. 60.000.000, hingga muncul jumlah penghasilan akhir setelah pajak 15% dan memiliki harta kekayaan berupa mobil dengan harga jual 80.000.000 dan perhiasan berupa gelang dengan harga 3.000.000. Kemudian seseorang tersebut sudah berkeluarga, dan memiiki anak yang kuliah 1, sehingga penghasilannya akan dipotong oleh pajak , dan muncul total harta kekayaan. 
 
 > **Kerjakan secara individu, segala bentuk yang mengarah kepada kecurangan akan mendapatkan nilai 0.**
 >
