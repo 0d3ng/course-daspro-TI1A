@@ -20,6 +20,7 @@ kode program pada cell yang telah disediakan dan jangan lupa untuk menjalankan h
 
 ```Java
 // tulis jawaban di sini
+import java.util.Scanner;
 
 Scanner input = new Scanner(System.in);
 String jenis_barang, nama, isPlastik, isDone;
