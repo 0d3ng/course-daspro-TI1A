@@ -68,6 +68,7 @@ if(totalHarga >= 1000000){
 }
 System.out.println("total harga = Rp " + totalHarga);
 ```
+```
 Selamat datang di MaulanaMart mau belanja berapa barang ?
 Beli Makanan atau Minuman ? Tulis di bawah
 minuman
@@ -98,7 +99,7 @@ y
 total harga minuman anda : 1140000.0
 total harga makanan anda : 0.0
 total harga = Rp 1060386.0
-        
+```
 
 
 2.	Seorang yang akan membayar pajak perlu dihitung semua harta kekayaan atau penghasilan. Kriteria yang dapat dihitung adalah sebagai berikut
