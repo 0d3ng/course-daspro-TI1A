@@ -31,64 +31,59 @@ kode program pada cell yang telah disediakan dan jangan lupa untuk menjalankan h
 
 ```python
 import java.util.Scanner;
-Scanner input = new Scanner(System.in);
-        String usaha,keluarga,harta,tingkatP;
-        int nJual,penghasilan,anak,totalKaya,bayar;
+Scanner in = new Scanner(System.in);
+        String usaha,keluarga,harta,tingkatPendidikan;
+        int nilaiJual,penghasilan,anak,totalKekayaan,bayar;
         double pajak = 0;
+
         System.out.print("Apakah anda memiliki usaha? (y/n) : ");
-        usaha = input.nextLine();
+        usaha = in.nextLine();
+
         if(usaha.equalsIgnoreCase ("y")){
             System.out.print("Masukkan penghasilan 1 tahun : ");
-            penghasilan = input.nextInt();
+            penghasilan = in.nextInt();
             System.out.print("Masukkan harta kekayaan : ");
-            
-            harta = input.nextLine();
+            in.nextLine();
+            harta = in.nextLine();
             System.out.print("Masukkan total jual : ");
-            nJual = input.nextInt();
+            nilaiJual = in.nextInt();
             System.out.print("Apakah anda sudah berkeluarga? (y/n) : ");
-            input.nextLine();
-            keluarga = input.nextLine();
+            in.nextLine();
+            keluarga = in.nextLine();
             if(keluarga.equalsIgnoreCase ("y")){
                 System.out.print("Jumlah anak : ");
-                anak = input.nextInt();
+                anak = in.nextInt();
                 System.out.print("Tingkat pendidikan : ");
                 
-                tingkatP = input.nextLine();
-                if(anak == 1 && tingkatP.equalsIgnoreCase ("SMA") && nJual >= 50000000){
-                    totalKaya = penghasilan + nJual;
-                    bayar = (int) (totalKaya * 0.05);
+                tingkatPendidikan = in.nextLine();
+                if(anak == 1 && tingkatPendidikan.equalsIgnoreCase ("SMA") && nilaiJual >= 50000000){
+                    totalKekayaan = penghasilan + nilaiJual;
+                    bayar = (int) (totalKekayaan * 0.05);
                     System.out.println("bayar pajak = " + bayar);
-                } else if(anak == 1 && tingkatP.equalsIgnoreCase ("kuliah") && nJual >= 50000000){
-                    totalKaya = penghasilan + nJual;
-                    bayar = (int) (totalKaya * 0.05);
+                } else if(anak == 1 && tingkatPendidikan.equalsIgnoreCase ("kuliah") && nilaiJual >= 50000000){
+                    totalKekayaan = penghasilan + nilaiJual;
+                    bayar = (int) (totalKekayaan * 0.05);
                     System.out.println("bayar pajak = " + bayar);
-                } else if(anak >= 1 && nJual <= 50000000){
-                    totalKaya = penghasilan + nJual;
-                    bayar = (int) (totalKaya * 0.10);
+                } else if(anak >= 1 && nilaiJual <= 50000000){
+                    totalKekayaan = penghasilan + nilaiJual;
+                    bayar = (int) (totalKekayaan * 0.10);
                     System.out.println("bayar pajak = " + bayar);
                 } 
             } else if(keluarga.equalsIgnoreCase ("n")){
-                totalKaya = penghasilan + nJual;
-                bayar = (int) (totalKaya * 0.15);
+                totalKekayaan = penghasilan + nilaiJual;
+                bayar = (int) (totalKekayaan * 0.15);
                 System.out.println("bayar pajak = " + bayar);
             }
         } else if(usaha.equalsIgnoreCase ("n")){
             System.out.print("Masukkan harta kekayaan : ");
-            harta = input.nextLine();
+            harta = in.nextLine();
             System.out.print("Masukkan total jual : ");
-            nJual = input.nextInt();
-            totalKaya = nJual;
-            bayar = (int) (totalKaya * 0.15);
+            nilaiJual = in.nextInt();
+            totalKekayaan = nilaiJual;
+            bayar = (int) (totalKekayaan * 0.15);
             System.out.println("bayar pajak = " + bayar);
         }
 ```
-
-
-      File "/tmp/ipykernel_13/2269554321.py", line 2
-        Scanner input = new Scanner(System.in);
-                ^
-    SyntaxError: invalid syntax
-
 
 
 > **Kerjakan secara individu, segala bentuk yang mengarah kepada kecurangan akan mendapatkan nilai 0.**
