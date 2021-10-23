@@ -19,9 +19,7 @@ Mahasiswa mampu menyelesaikan permasalahan/studi kasus menggunakan sintaks perul
 
 1. Perhatikan flowchart perulangan for dibawah ini!
 
-    <p align="left">
-    <img width="197" height="259" src="images/flowchartFaktorial.png">
-    </p>
+    ![](images/flowchartFaktorial.png)
     
 
 > Flowchart diatas digunakan untuk menghitung nilai faktorial, selanjutnya kita akan membuat programnya berdasarkan
@@ -57,10 +55,7 @@ ___
 
 4. Tambahkan struktur perulangan untuk menghitung hasil faktorial sebuah nilai yang diinputkan menggunakan for
     
-    <p align="left">
-    <img width="696" height="124" src="images/for.jpg" align="left">
-    </p>
-
+    ![](images/for.jpg)
 
 ```Java
 // Ketik kode program di atas di bawah sini
@@ -82,9 +77,7 @@ ___
 
 5. Ubah nilai variabel faktorial seperti semula. Kemudian gunakan struktur perulangan while untuk menghitung hasil faktorial sebuah nilai yang diinputkan
     
-    <p align="left">
-    <img width="696" height="124" src="images/while.jpg" align="left">
-    </p>
+    ![](images/while.jpg)
 
 
 ```Java
@@ -111,9 +104,7 @@ ___
 
 6. Kembalikan lagi nilai variabel faktorial seperti semula. Gunakan struktur perulangan do-while untuk menghitung hasil faktorial sebuah nilai yang diinputkan
     
-    <p align="left">
-    <img width="696" height="124" src="images/dowhile.jpg" align="left">
-    </p>
+    ![](images/dowhile.jpg)
 
 
 ```Java
@@ -140,18 +131,16 @@ ___
 
 ##### Pertanyaan
 1. Pada program diatas, apakah kegunaan baris berikut?
-<p align="left">
-    <img src="images/hitungFaktorial.jpg" align="left">
-    </p>
+    
+    ![](images/hitungFaktorial.jpg)
 
 // Ketik jawaban disini
 > artinya variabel `faktorial` dikalikan dengan `i` kemudian hasilnya disimpan kedalam variabel `faktorial` itu sendiri.
 ___
 
 2. Modifikasi program diatas dibagian struktur pemilihannya sehingga hasilnya menjadi seperti di bawah ini:
-<p align="left">
-    <img src="images/modifP1.jpg" align="left">
-    </p>
+
+    ![](images/modifP1.jpg)
 
 
 ```Java
@@ -192,10 +181,8 @@ ___
 #### Waktu percobaan : 40 menit
 
 1. Buatlah perulangan dengan menggunakan for yang memanfaatkan keyword break
-<p align="left">
-    <img width="696" height="124" src="images/for2.jpg" align="left">
-    </p>
 
+    ![](images/for2.jpg)
 
 ```Java
 // Ketik kode program di atas di bawah sini
@@ -223,9 +210,8 @@ System.out.println("Jumlah angka-angka yang telah dimasukkan : " + total);
 ___
 
 2. Buat perulangan yang sama dengan struktur perulangan while
-<p align="left">
-    <img width="696" height="124" src="images/while2.jpg" align="left">
-    </p>
+
+    ![](images/while2.jpg)
 
 
 ```Java
@@ -247,10 +233,9 @@ System.out.println("Jumlah angka-angka yang telah dimasukkan : " + total);
 ___
 
 3. Tuliskan perulangan diatas dalam struktur do-while
-    <p align="left">
-    <img width="696" height="124" src="images/dowhile2.jpg" align="left">
-    </p>
-
+    
+    ![](images/dowhile2.jpg)
+    
 
 ```Java
 // Ketik kode program di atas di bawah sini
@@ -279,9 +264,8 @@ ___
 ___
 
 2. Jelaskan fungsi kode berikut!
-    <p align="left">
-    <img src="images/forPertanyaan2.jpg" align="left">
-    </p>
+    
+    ![](images/forPertanyaan2.jpg)
 
 
 // Ketik jawaban disini
@@ -292,10 +276,8 @@ ___
 #### Waktu percobaan : 40 menit
 
 1. Buat program looping menggunakan struktur perulangan for seperti di bawah ini: 
-<p align="left">
-    <img src="images/forContinue.jpg" align="left">
-    </p>
 
+    ![](images/forContinue.jpg)
 
 
 ```Java
@@ -344,9 +326,8 @@ ___
 ___
 
 2. Jelaskan apa fungsi perintah kode program dibawah ini?
-<p align="left">
-    <img width="352" height="79" src="images/continuePertanyaan.jpg" align="left">
-    </p>
+
+    ![](images/continuePertanyaan.jpg)
 
 // Ketik jawaban disini
 > Jika variabel `angka` lebih besar sama dengan 50 maka akan melanjutkan loop dan mengabaikan baris dibawahnya
@@ -362,10 +343,10 @@ Contoh:
         0 + 2 + 4 + 6 + 10 = 30. 
         Setelah itu program akan menampilkan rata-rata dari bilangan positive yang telah dijumlahkan tadi.
     •	Contoh output program dan flowchart
-<br/><img width="303" height="529" src="images/hasilTugasFc.jpg" align="left"><br/>
-  
 
-<br/><img width="303" height="529" src="images/fcTugasJS7.png" align="left">
+    ![](images/hasilTugasFc.jpg)
+  
+    ![](images/fcTugasJS7.png)
 
 
 
@@ -411,9 +392,8 @@ System.out.printf("\nRata-rata bilangan genap dari 1 sampai %d adalah %.1f\n", b
 ___
 
 2. Buatlah program untuk menampilkan angka 1 hingga angka masukan pengguna secara berurutan dan melompati angka kelipatan 5. Seperti tampilan di bawah ini
-<p align="left">
-<img width="184" height="328" src="images/tugas1.jpg" align="left">
-</p>
+
+    ![](images/tugas1.jpg)
 
 
 ```Java
@@ -456,9 +436,8 @@ for(int i=0; i<=bil; i++){
 ___
 
 3. Buatlah sebuah program yang menampilkan deret bilangan fibonacci sebagai berikut. Dimana bilangan yang terletak di sebelah kanan adalah hasil penjumlahan dari 2 bilangan sebelumnya
- <p align="left">
-    <img width="451" height="226" src="images/fibo.png" align="left">
-    </p>
+    
+    ![](images/fibo.png)
 
 
 
