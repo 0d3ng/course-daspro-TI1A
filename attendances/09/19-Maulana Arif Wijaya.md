@@ -105,6 +105,14 @@ for(int outer = 1; outer <= N; outer++){
 }
 
 ```
+```
+masukkan nilai N : 5
+******
+******
+******
+******
+******
+```
 
 ***
 ### Percobaan 2: Bintang Segitiga
@@ -156,7 +164,7 @@ Scanner in = new Scanner (System.in);
 System.out.print("Masukkan nilai N = ");
 int n = in.nextInt();
 int i = 0;
-while(i <= N){
+while(i <= n){
     int j = 0;
     while(j<i){
         System.out.print("*");
@@ -167,8 +175,17 @@ while(i <= N){
 }
 ```
 ```
-Hanya perlu menambah kode ("System.out.println("")) pada outer loop. Hal ini bertujuan, agar terdapat jarak ketika selesai melakukan satu perulangan dalam. 
+Masukkan nilai N = 5
+
+*
+**
+***
+****
+*****
 ```
+
+Hanya perlu menambah kode ("System.out.println("")) pada outer loop. Hal ini bertujuan, agar terdapat jarak ketika selesai melakukan satu perulangan dalam. 
+
 ***
 ### Percobaan 3: Segitiga Angka
 1.	Pada percobaan ke-3 akan dilakukan percobaan segitiga angka sama siku dengan tinggi sebesar N. Misalkan N dimasukan **5**, maka hasilnya seperti berikut
@@ -228,8 +245,16 @@ for(int i = 1 ; i <= n; i++){
 }
 ```
 ```
-yang harus dimodifikasi adalah pada print(j) menjadi print(i). Karena setiap baris haruslah memiliki angka yang sama, jika kita menginputkan j, maka angka akan dimulai dari 1, sementara pada variabel i, setiap ganti baris angka akan bertambah 1 dan tidak berubah pada baris itu. 
+Masukkan nilai N : 5
+1
+22
+333
+4444
+55555
 ```
+
+yang harus dimodifikasi adalah pada print(j) menjadi print(i). Karena setiap baris haruslah memiliki angka yang sama, jika kita menginputkan j, maka angka akan dimulai dari 1, sementara pada variabel i, setiap ganti baris angka akan bertambah 1 dan tidak berubah pada baris itu. 
+
 ***
 ### Percobaan 4: Tebak Angka
 1. Pada Percobaan 4 ini, kita akan belajar membuat kode untuk menebak angka menggunakan _nested loop_.
@@ -272,9 +297,9 @@ char menu = 'y';
     2. hentikan _nested loop_ jika pengguna gagal menebak angka sampai 10x tebakan, dan beri pesan "Maaf Anda gagal menebak angka sebanyak 10x"
 
 #### Jawaban
-1. ...
-2. ...
+1. program diawali dengan pendeklrasian variabel serta object scanner dan random serta penginisialisasian char . Kemudian membuat outer loop yang mencetak sebuah nomor Random, nomor tersebut akan disimpan pada variabel number dan menginisialisasikan boolean success dengan value false. Kemudian setelah kita memiliki nomor random, maka kita akan menjalankan innerloop yang berisikan variabel untuk menginput angka yang akan diinputkan user. Setelah itu angka user akan dicheck apakah sama dengan nomor random tadi. Jika iya maka inner loop akan berakhir lalu keluar loop, jika tidak maka akan mengulangi terus hingga user menginputkan angka yang tepat. Ketika sudah keluar dari inner loop maka kita akan memasuki outerloop lagi dan menanyakan user apakah ingin mengulang permainan . Jika iya(menginputkan y) maka loop tidak akan berakhir melainkan mulai dari awal dan memasuki inner loop lagi hingga user mengakhiri loop atau permainan dengan menginputkan karakter selain y. 
 
+2. untuk melakukannya, ketika sudah keluar dari innerloop, kita sebagai user harus menginputkan karakter selain Y.
 
 
 ```Java
