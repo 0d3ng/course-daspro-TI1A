@@ -1,8 +1,8 @@
 Identitas Diri
 
-Nim : 2141720085
+Nim : [2141720037]
 
-Nama: Maulana Arif Wijaya
+Nama: [M. Rom doni]
 
 ### Soal UTS 2021-2022
 Waktu: 90 menit
@@ -19,17 +19,20 @@ kode program pada cell yang telah disediakan dan jangan lupa untuk menjalankan h
 
 
 ```Java
-Scanner in = new Scanner(System.in);
+import java.util.Scanner;
+public class gas{
+     public static void main(String[] args){
+       Scanner in = new Scanner(System.in);
 double hargaBarang = 0,totalHargaMinuman =0,totalHargaMakanan=0,totalHarga=0;
 int jumlahMinuman =0;
 String namaBarang,jenisBarang;
-System.out.println("Selamat datang di MaulanaMart mau belanja berapa barang ?");
+System.out.println("Mau belanja berapa barang ?");
 boolean beliLagi;
 do{
-    System.out.println("Beli Makanan atau Minuman ? Tulis di bawah");
+    System.out.println("Beli Makanan atau Minuman ?");
     jenisBarang = in.nextLine();
-    if(jenisBarang.equalsIgnoreCase("minuman")){
-        System.out.println("Apa nama minumannya ?");
+    if(jenisBarang.equalsIgnoreCase("makanan")){
+        System.out.println("nama makanan ?");
         namaBarang = in.nextLine();
         System.out.println("Berapa harganya ?");
         hargaBarang = in.nextDouble();
@@ -40,8 +43,8 @@ do{
             totalHargaMinuman -= totalHargaMinuman*0.05;
         }
     }
-    if (jenisBarang.equalsIgnoreCase("makanan")){
-        System.out.println("Apa nama makanannya ?");
+    if (jenisBarang.equalsIgnoreCase("minuman")){
+        System.out.println("nama minuman?");
         namaBarang = in.nextLine();
         System.out.println("Berapa harganya ?");
         hargaBarang = in.nextDouble();
@@ -49,58 +52,27 @@ do{
         totalHargaMakanan += hargaBarang;
     }
     beliLagi = false;
-    System.out.println("apakah ingin membeli barang lagi ?(Y jika iya / N jika tidak)");
-    String beliLagiGa = in.nextLine();
-    if(beliLagiGa.equalsIgnoreCase("y")){
+    System.out.println("mau tambah sesuatu?(Y jika iya / N jika tidak)");
+    String beliLagiGak = in.nextLine();
+    if(beliLagiGak.equalsIgnoreCase("y")){
         beliLagi = true;
     }
 }while(beliLagi == true);
-System.out.println("Sekalian kantong plastiknya kak ?(Y = ya/ N = tidak)");
-String kresek = in.nextLine();
-System.out.println("total harga minuman anda : " + totalHargaMinuman);
-System.out.println("total harga makanan anda : " + totalHargaMakanan);
+System.out.println("pakek kantong plastik apa enggak ?(Y = ya/ N = tidak)");
+String kantongPlastik = in.nextLine();
+System.out.println("total harga makanan  : " + totalHargaMinuman);
+System.out.println("total harga minuman  : " + totalHargaMakanan);
 totalHarga = totalHargaMakanan + totalHargaMinuman;
-if (kresek.equalsIgnoreCase("y")) {
+if (kantongPlastik.equalsIgnoreCase("y")) {
     totalHarga += 200;
 }
 if(totalHarga >= 1000000){
     totalHarga -= totalHarga*0.07;
 }
 System.out.println("total harga = Rp " + totalHarga);
+     }
+}
 ```
-```
-Selamat datang di MaulanaMart mau belanja berapa barang ?
-Beli Makanan atau Minuman ? Tulis di bawah
-minuman
-Apa nama minumannya ?
-aqua
-Berapa harganya ?
-500000
-apakah ingin membeli barang lagi ?(Y jika iya / N jika tidak)
-y
-Beli Makanan atau Minuman ? Tulis di bawah
-minuman
-Apa nama minumannya ?
-cleo
-Berapa harganya ?
-500000
-apakah ingin membeli barang lagi ?(Y jika iya / N jika tidak)
-y
-Beli Makanan atau Minuman ? Tulis di bawah
-minuman
-Apa nama minumannya ?
-santri
-Berapa harganya ?
-200000
-apakah ingin membeli barang lagi ?(Y jika iya / N jika tidak)
-n
-Sekalian kantong plastiknya kak ?(Y = ya/ N = tidak)
-y
-total harga minuman anda : 1140000.0
-total harga makanan anda : 0.0
-total harga = Rp 1060386.0
-```
-
 
 2.	Seorang yang akan membayar pajak perlu dihitung semua harta kekayaan atau penghasilan. Kriteria yang dapat dihitung adalah sebagai berikut
     + Sebelum dihitung, wajib pajak ditanya terlebih dahulu apakah memiliki usaha atau tidak. Ketika memiliki usaha, maka perlu diinputkan penghasilan dalam 1 tahun berapa? Kemudian dikenai pajak sebesar 15%
@@ -108,10 +80,11 @@ total harga = Rp 1060386.0
     + Harta kekayaan berupa, benda bergerak(kendaraan,dll) ataupun kekayaan yang tidak bergerak(perhiasan, tanah, surat berharga, dll). Silakan diinputkan nama kendaraan ataupun perhiasaannya beserta nilai jual saat ini.
     + Jika wajib pajak sudah berkeluarga, maka perlu ditanyakan tingkat pendidikan(SD,SMP,SMA,KULIAH). Ketika jumlah yang kuliah anaknya 1 dan 1 SMA dan total harta kekayaan lebih dari sama dengan 50 juta maka akan dipotong semua pajaknya 10%. Sedangkan tidak ada yang SMA ataupun KULIAH dan total harta kekayaan kurang dari 50 juta maka akan dipotong 5%.
 
-```java
+
+```Java
+// tulis jawaban di sini
 
 ```
-
 
 > **Kerjakan secara individu, segala bentuk yang mengarah kepada kecurangan akan mendapatkan nilai 0.**
 >
