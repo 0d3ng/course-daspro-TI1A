@@ -1,12 +1,12 @@
 <dl>
   <dt>NIM :</dt>
-  <dd>...</dd>
+  <dd>2141720051</dd>
 
   <dt>Nama :</dt>
-  <dd>...</dd>
+  <dd>Billie Faiqul Izzat</dd>
     
   <dt>Kelas :</dt>
-  <dd>...</dd>
+  <dd>1A</dd>
 </dl>
 
 
