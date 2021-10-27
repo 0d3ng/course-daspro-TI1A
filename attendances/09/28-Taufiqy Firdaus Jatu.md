@@ -463,10 +463,14 @@ Buatlah program untuk mencetak tampilan persegi angka seperti di bawah ini berda
 import java.util.Scanner;
 
 Scanner in = new Scanner(System.in);
-System.out.print("Masukkan nilai N : ");
+System.out.print("Masukkan nilai N (min3) : ");
 int N = in.nextInt();
 
 for(int i = 1; i <= N; i++) {
+    if(N < 3){
+        System.out.print("Angka minimal adalah 3!!");
+        break;
+    }
     for(int j = 1; j <= N; j++){
         if(i == 1 || i == N || j == 1 || j == N){
             System.out.print(N);
@@ -478,7 +482,7 @@ for(int i = 1; i <= N; i++) {
 }
 ```
 
-    Masukkan nilai N : 5
+    Masukkan nilai N (min3) : 5
     55555
     5   5
     5   5
@@ -497,10 +501,14 @@ Buatlah program untuk mencetak tampilan piramida * seperti gambar di bawah ini, 
 import java.util.Scanner;
 
 Scanner in = new Scanner(System.in);
-System.out.print("Masukkan nilai N : ");
+System.out.print("Masukkan nilai N (min3): ");
 int N = in.nextInt();
 
 for(int i = 1; i <= N; i++) {
+    if(N < 3){
+        System.out.print("Angka minimal adalah 3!!");
+        break;
+    }
     for(int j = N; j >= i; j--){
         System.out.print(" ");
     }
@@ -514,7 +522,7 @@ for(int i = 1; i <= N; i++) {
 }
 ```
 
-    Masukkan nilai N : 5
+    Masukkan nilai N (min3) : 5
          *
         ***
        *****
