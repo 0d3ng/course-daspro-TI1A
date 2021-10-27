@@ -542,4 +542,4 @@ for(int i = 1; i <= n; i++){
 
 
 **Penjelasan :**
-Dari pemrograman diatas menggunakan nested loop for namun dengan bentuk yang berbeda dari sebelumnya yang merupakan bentuk segitiga siku siku atau tangga naik. 
+Dari pemrograman diatas menggunakan nested loop for namun dengan bentuk yang berbeda dari sebelumnya yang merupakan bentuk segitiga siku siku atau tangga naik, sedangkan diatas bentuknya seperti segitiga sama sisi atau piramida.
