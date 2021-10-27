@@ -55,6 +55,7 @@ for(int i = 0; i <= N; i++){
 
     Masukkan nilai N : 5
     ******
+program di atas  adalah untuk mencetak output bintang sebanyak nilai N
 
 5.	Perhatikan sintaks perulangan yang digunakan untuk mencetak * sebanyak N kali ke arah samping. Di tahap 4 di atas kode _looping **for**_ kita jadikan sebagai _**inner loop**_. 
 6.	Kita looping lagi _inner loop_ sebanyak N kali untuk menghasilkan _output_ seperti tahap 2. Maka perlu ditambahkan perulangan luar (_outer loop_).
@@ -111,6 +112,7 @@ for(int i = 1; i <= N; i++){
     *****
     *****
 
+program ini adalah perulangan bersarang untuk menampilkan * sebanyak N dan membentuk persegi
 
 ***
 ### Percobaan 2: Bintang Segitiga
@@ -140,6 +142,7 @@ while(i <= N) {
 
     Masukkan nilali N =5
     ***************
+program di atas adalah untuk menampilkan output berupa segitiga bintang namun disini outputnya tidak sesuai kara masi ada kode program yang masih kurang 
 
 Amati kode program yang telah kalian tulis di atas.
 
@@ -177,7 +180,7 @@ while(i <= N) {
     ***
     ****
     *****
-
+nah disini outputnya sudah mnejadi segitiga bintang karena ada kode yang ditambahkan yaitu System.out.println untuk menampilkan output bintang disetiap barisnya sehingga menjadi segitiga bintang
 
 ***
 ### Percobaan 3: Segitiga Angka
@@ -208,7 +211,7 @@ for( int i = 1; i <= N; i++ ){
     jjj
     jjjj
     jjjjj
-
+program di atas sama saja dengan percobaan kedua namun disini kita bukan menampilkan * melainkan j dengan mengubah apa yang akan dioutputkan di statemen perulangan inter
 
 #### Pertanyaan 
 1. Apakah kode program di atas menghasilkan _output_ yang diharapkan?
@@ -238,7 +241,7 @@ for( int i = 1; i <= N; i++ ){
     333
     4444
     55555
-
+disini kita akan menampilkan angka di outputnya maka yang diganti adalah statemen yang ada di internya yang awalnya j menjadi i
 
 ***
 ### Percobaan 4: Tebak Angka
@@ -299,6 +302,7 @@ do{
     Yay.....Tebakan Anda Benar.....Selamat!!!
     Apakah anda ingin mengulang permainan (y/Y) ?Y
     Tebak angka (1-10) : 
+
 
 #### Pertanyaan
 1. Jelaskan alur program di atas!
@@ -372,7 +376,7 @@ do{
     Yay.....Tebakan Anda Benar.....Selamat!!!
     Apakah anda ingin mengulang permainan (y/t) ?t
 
-
+program di atas hanya untuk menampilkan jawaban yang di inputkan apakah lebih besaar atau lebih kecil dari pada nilai random dengan menambahkan jika answer lebih dari number makan lebih besar dari nilai random dan jika tidak maka lebih kecil dari nilai random 
 
 ```Java
 /* Jawaban untuk Percobaan 4 Pertnyaan 3.B disini */
@@ -445,7 +449,7 @@ do{
     lebih kecil dari nilai random
     Anda gagal menebak 10x
     Apakah anda ingin mengulang permainan (y/t) ?t
-
+program di atas hanya ditambahkan jika i sama dengan 10 maka akan berhenti karna nilai dari sukses sudah true 
 
 ***
 ## Tugas
