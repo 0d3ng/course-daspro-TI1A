@@ -486,11 +486,11 @@ for(i = 1; i <= N; i++)
              {
                  if (i==1||i==N||j==0||j==N-1)
                  {
-                     System.out.print(N);
+                     System.out.print(N + " ");
                  }
                  else
                  {
-                     System.out.print(" ");
+                     System.out.print("  ");
                  }
              }
          System.out.println();
@@ -499,15 +499,15 @@ for(i = 1; i <= N; i++)
 ```
 
     Masukkan nilai N: 9
-    999999999
-    9       9
-    9       9
-    9       9
-    9       9
-    9       9
-    9       9
-    9       9
-    999999999
+    9 9 9 9 9 9 9 9 9 
+    9               9 
+    9               9 
+    9               9 
+    9               9 
+    9               9 
+    9               9 
+    9               9 
+    9 9 9 9 9 9 9 9 9 
 
 
 Penjelasan: Kode program tersebut berfungsi untuk membentuk segitiga menggunakan elemen angka yang diinputkan. Mula mula user diminta untuk menginputkan sebuah angka 1 digit, lalu akan dibentuk segitiga menggunakan elemen angka tersebut yang memiliki lubang ditengah (persegi tanpa isi). Jika angka lebih dari 2 digit, akan ditolak dan muncul tulisan "Maaf Angka Harus Menggunakan 1 Digit Angka!". Namun juga jika bilangan yang diinputkan 0 maka akan ditolak dan muncul tulisan "Maaf Angka Tidak Boleh 0!".
