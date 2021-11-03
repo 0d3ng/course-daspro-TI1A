@@ -46,6 +46,10 @@ for(int i = 0; i < 4; i++){
 }
 
 ```
+    5
+    12
+    7
+    20
 
 #### Pertanyaan 
 1. Dari percobaan 1 berapakah indeks array terbesar dan terkecil?
@@ -79,10 +83,6 @@ outputnya tetap sama, karena menggunakan for loop untuk mencetak value dari arra
 ![Gambar Flowchart](images/FCpercobaan2.png)
 
 
-```Java
-// Tulis Kode program Percobaan 2 Langkah 1 di atas
-
-```
 
 2. Import dan deklarasikan Scanner untuk keperluan input. 
 ![Gambar import scanner](images/P2L2.png)
@@ -489,6 +489,8 @@ for(int i = 0; i<arr.length;i++){
     array setelah revers
     9 6 7 2 5
 
+Penjelasan :
+
 Untuk membalikkan array, kita hanya perlu menukar angka pertama dengan terakhir lalu kedua dengan kedua terakhir dan seterusnya. Caranya adalah dengan amembuat perulangan sebanyak panjang suatu array dibagi dua, karena kita hanya menukar angka indeks pertama sampai indeks tengah yang mana itu adalah panjangnya array dibagi 2. Lalu membuat suatu variabel (bukan array) yang dapat menampung nilai dari suatu array, value dari array itu disimpan sementara  
 agar value yang telah ditukar tidak ditukar kembali. Jadilah program seperti di atas.
 
@@ -524,5 +526,7 @@ System.out.print("Bilangan terbesar adalah " +arr[arr.length-1]);
     Masukkan elemen array ke-3: 12
     Masukkan elemen array ke-4: 63
     Bilangan terbesar adalah 99
+
+Penjelasan:
 
 Untuk mencari bilangan yang terbesar dalam sebuah array, kita harus membuat program yang dapat mengurutkan value dari yang terkecil hingga terbesar, caranya adalah dengan menggunakan metode bubble sorting, yaitu memeriksa satu persatu value dari sebuah array, jika suatu value lebih besar nilainya daripada value di indeks berikutnya, maka value tersebut harus bertukar, hal ini dilakukan terus - menerus hingga semua value di setiap indeks urut dari yang terkecil di indeks awal hingga value terbesar di indeks akhir. Cara melakukannya dengan membuat nested loop , loop luar melakukan perulangan sebanyak panjangnya array lalu membuat loop dalam melakukan perulangan sebanyak panjangnya array dikurangi indeks i yang terus berjalan + 1 agar semua indeks dapat diperiksa. Kemudian  membuat program untuk mengetahui apakah suatu indeks lebih besar dari depannya, jika iya maka tukar. Hal ini dilakukan dengan membuat variabel baru untuk menampung nilai yang akan ditukar, agar setelah ditukar tidak ditukar kembali. Setelah berhasil mengurutkan nilai dari yang terkecil ke yang besar, maka kita hanya perlu mencetak value dari array di indeks terakhir yaitu panjang array - 1.
