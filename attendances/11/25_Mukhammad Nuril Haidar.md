@@ -306,51 +306,54 @@ for(int x=0; x<suhu.length; x++){
             max = suhu[x][y];
         }
     }
-    System.out.printf("Suhu maksimal kota ke-%d adalah :%.2f \n", (x+1), max);
 }
+System.out.printf("Suhu maksimal kelima kota adalah :%.2f \n", max);
 ```
 
-    Masukkan Suhu pada Kota ke-1 : 80
-    Masukkan Suhu pada Kota ke-1 : 80
-    Masukkan Suhu pada Kota ke-1 : 80
-    Masukkan Suhu pada Kota ke-1 : 90
-    Masukkan Suhu pada Kota ke-1 : 90
-    Masukkan Suhu pada Kota ke-1 : 90
-    Masukkan Suhu pada Kota ke-1 : 100
-    Suhu maksimal kota ke-1 adalah :100.00 
-    Masukkan Suhu pada Kota ke-2 : 100
-    Masukkan Suhu pada Kota ke-2 : 110
-    Masukkan Suhu pada Kota ke-2 : 110
-    Masukkan Suhu pada Kota ke-2 : 110
-    Masukkan Suhu pada Kota ke-2 : 110
-    Masukkan Suhu pada Kota ke-2 : 120
-    Masukkan Suhu pada Kota ke-2 : 130
-    Suhu maksimal kota ke-2 adalah :130.00 
-    Masukkan Suhu pada Kota ke-3 : 130
-    Masukkan Suhu pada Kota ke-3 : 130
-    Masukkan Suhu pada Kota ke-3 : 140
-    Masukkan Suhu pada Kota ke-3 : 140
-    Masukkan Suhu pada Kota ke-3 : 140
-    Masukkan Suhu pada Kota ke-3 : 150
-    Masukkan Suhu pada Kota ke-3 : 170
-    Suhu maksimal kota ke-3 adalah :170.00 
-    Masukkan Suhu pada Kota ke-4 : 190
-    Masukkan Suhu pada Kota ke-4 : 190
-    Masukkan Suhu pada Kota ke-4 : 190
-    Masukkan Suhu pada Kota ke-4 : 200
-    Masukkan Suhu pada Kota ke-4 : 200
-    Masukkan Suhu pada Kota ke-4 : 210
-    Masukkan Suhu pada Kota ke-4 : 210
-    Suhu maksimal kota ke-4 adalah :210.00 
-    Masukkan Suhu pada Kota ke-5 : 230
-    Masukkan Suhu pada Kota ke-5 : 230
-    Masukkan Suhu pada Kota ke-5 : 240
-    Masukkan Suhu pada Kota ke-5 : 250
-    Masukkan Suhu pada Kota ke-5 : 260
-    Masukkan Suhu pada Kota ke-5 : 260
-    Masukkan Suhu pada Kota ke-5 : 270
-    Suhu maksimal kota ke-5 adalah :270.00 
+    Masukkan Suhu pada Kota ke-1 : 1
+    Masukkan Suhu pada Kota ke-1 : 12
+    Masukkan Suhu pada Kota ke-1 : 13
+    Masukkan Suhu pada Kota ke-1 : 14
+    Masukkan Suhu pada Kota ke-1 : 15
+    Masukkan Suhu pada Kota ke-1 : 16
+    Masukkan Suhu pada Kota ke-1 : 17
+    Masukkan Suhu pada Kota ke-2 : 18
+    Masukkan Suhu pada Kota ke-2 : 19
+    Masukkan Suhu pada Kota ke-2 : 10
+    Masukkan Suhu pada Kota ke-2 : 12
+    Masukkan Suhu pada Kota ke-2 : 13
+    Masukkan Suhu pada Kota ke-2 : 14
+    Masukkan Suhu pada Kota ke-2 : 15
+    Masukkan Suhu pada Kota ke-3 : 16
+    Masukkan Suhu pada Kota ke-3 : 17
+    Masukkan Suhu pada Kota ke-3 : 18
+    Masukkan Suhu pada Kota ke-3 : 19
+    Masukkan Suhu pada Kota ke-3 : 15
+    Masukkan Suhu pada Kota ke-3 : 2
+    Masukkan Suhu pada Kota ke-3 : 23
+    Masukkan Suhu pada Kota ke-4 : 42
+    Masukkan Suhu pada Kota ke-4 : 24
+    Masukkan Suhu pada Kota ke-4 : 52
+    Masukkan Suhu pada Kota ke-4 : 14
+    Masukkan Suhu pada Kota ke-4 : 43
+    Masukkan Suhu pada Kota ke-4 : 24
+    Masukkan Suhu pada Kota ke-4 : 52
+    Masukkan Suhu pada Kota ke-5 : 53
+    Masukkan Suhu pada Kota ke-5 : 357
+    Masukkan Suhu pada Kota ke-5 : 3
+    Masukkan Suhu pada Kota ke-5 : 4
+    Masukkan Suhu pada Kota ke-5 : 3
+    Masukkan Suhu pada Kota ke-5 : 4
+    Masukkan Suhu pada Kota ke-5 : 1
+    Suhu maksimal kelima kota adalah :357.00 
     
+
+
+
+
+    java.io.PrintStream@366da488
+
+
 
 - Kode diatas digunakan untuk mencari suhu tertinggi dari setiap baris pada array suhu dengan menggunakan kondisi dimana jika suhu yang diinput melebihi dari variabel max maka value dari array tersebut akan menjadi max yang baru
 
