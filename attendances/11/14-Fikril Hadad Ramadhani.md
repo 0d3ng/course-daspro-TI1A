@@ -336,7 +336,7 @@ for (int i = 0; i < tabel.length; i++) {
     }
     jumlah += tabel[i][2];
 }
-rata = jumlah / tabel[0].length;
+rata = jumlah / tabel.length;
 System.out.println("Siswa tertua adalah " + namaMahasiswa[letakBaris]);
 System.out.println("Berat badan terendah seluruh mahasiswa adalah " + terendah);
 System.out.println("Rata-rata tinggi badan seluruh mahasiswa adalah " + rata);
