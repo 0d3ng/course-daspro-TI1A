@@ -294,18 +294,20 @@ import java.util.Scanner;
 Scanner sc = new Scanner(System.in);
 
 double[][] suhu = new double[5][7];
-double max = 0;
+
 
 for (int x = 0; x < suhu.length; x++) {
+    double max = 0;
     for ( int y = 0; y < suhu[0].length; y++) {
         System.out.print("Suhu di kota " + (x + 1) + " pada hari ke-" + (y + 1) + " : ");
-        suhu[x][y] = sc.nextInt();
+        suhu[x][y] = sc.nextDouble();
         if (suhu[x][y] > max) {
             max = suhu[x][y];
         }
     }
+    System.out.println("Suhu tertinggi di kota " + (x + 1) + " selama " + suhu[0].length + " hari adalah " + max);
 }
-System.out.println("Suhu tertinggi dari 5 kota selama 7 hari adalah " + max);
+
 ```
 
 >pertama, saya menyiapkan array suhu dan variabel max. array suhu digunakan untuk menyimpan nilai dari suhu tiap tiap kota. sedangkan variabel mac digunakan untuk menyimpan sementara nilai tertinggi dari suhu tiap tiap kota. setelah iitu. kita meminta input dari user dengan menggunakan 2 perulangan dan memasukkannya ke dalam array suhu. setelah itu, kita menggunakan perintah pemilihan yang jika nilai suhu yang diinputkan itu lebih besar daripada niali yang kita telah simpan di variabel max, maka nilai tersebut akan disimpan di vatiabel max dan menggantikan nilai dari variabel max. 
