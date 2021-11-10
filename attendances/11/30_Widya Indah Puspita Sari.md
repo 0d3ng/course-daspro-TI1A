@@ -287,7 +287,7 @@ Berfungsi untuk mencari rata-rata pada setiap bahan pokok. dimana terdapat 3 bah
 
 // Tuliskan jawaban nomor 2
 
-inisialisai variabel **total = 0** dan **rata = 0** berada di perulangan for yang pertama untuk menampung nilai total setiap setelah user menginputkan isi dari array harga setiap indeks kolom. Jika inisialisasi kedua variabel terletak di luar perulangan for maka nilai yang di tampung atau variabel total adalah semua nilai yang di inputkan (harga ketiga produk dalam satu semester) bukan harga setiap produk dalam satu semester
+inisialisai variabel **total = 0** dan **rata = 0** berada di perulangan for yang pertama untuk menampung nilai total setiap setelah user menginputkan isi dari array harga setiap indeks kolom. Jika inisialisasi kedua variabel terletak di luar perulangan for maka nilai yang di tampung atau variabel total adalah semua nilai yang di inputkan (harga ketiga produk dalam satu semester) bukan harga setiap produk dalam satu semester. Begitu pula dengan variabel "rata".
 
 ## Tugas
 
@@ -306,7 +306,7 @@ Scanner sc = new Scanner(System.in);
 
         for(int x = 0; x < suhu.length; x++){
             for(int y = 0; y < suhu[0].length; y++) {
-                System.out.print("Masukkan suhu : ");
+                System.out.printf("Masukkan suhu [%d][%d] : ", x, y);
                 suhu[x][y] = sc.nextInt();
                 if (suhu[x][y] > max) {
                     max = suhu[x][y];
@@ -318,45 +318,45 @@ Scanner sc = new Scanner(System.in);
     
 ```
 
-    Masukkan suhu : 20
-    Masukkan suhu : 35
-    Masukkan suhu : 27
-    Masukkan suhu : 39
-    Masukkan suhu : 17
-    Masukkan suhu : 18
-    Masukkan suhu : 27
-    Masukkan suhu : 26
-    Masukkan suhu : 1
-    Masukkan suhu : 1
-    Masukkan suhu : 1
-    Masukkan suhu : 1
-    Masukkan suhu : 1
-    Masukkan suhu : 1
-    Masukkan suhu : 1
-    Masukkan suhu : 1
-    Masukkan suhu : 1
-    Masukkan suhu : 1
-    Masukkan suhu : 11
-    Masukkan suhu : 1
-    Masukkan suhu : 1
-    Masukkan suhu : 1
-    Masukkan suhu : 1
-    Masukkan suhu : 1
-    Masukkan suhu : 1
-    Masukkan suhu : 1
-    Masukkan suhu : 1
-    Masukkan suhu : 1
-    Masukkan suhu : 1
-    Masukkan suhu : 1
-    Masukkan suhu : 1
-    Masukkan suhu : 1
-    Masukkan suhu : 1
-    Masukkan suhu : 1
-    Masukkan suhu : 1
-    Suhu Max : 39.0
+    Masukkan suhu [0][0] : 12
+    Masukkan suhu [0][1] : 10
+    Masukkan suhu [0][2] : 28
+    Masukkan suhu [0][3] : 34
+    Masukkan suhu [0][4] : 25
+    Masukkan suhu [0][5] : 36
+    Masukkan suhu [0][6] : 28
+    Masukkan suhu [1][0] : 10
+    Masukkan suhu [1][1] : 28
+    Masukkan suhu [1][2] : 39
+    Masukkan suhu [1][3] : 46
+    Masukkan suhu [1][4] : 37
+    Masukkan suhu [1][5] : 26
+    Masukkan suhu [1][6] : 25
+    Masukkan suhu [2][0] : 36
+    Masukkan suhu [2][1] : 25
+    Masukkan suhu [2][2] : 16
+    Masukkan suhu [2][3] : 10
+    Masukkan suhu [2][4] : 4
+    Masukkan suhu [2][5] : 6
+    Masukkan suhu [2][6] : 19
+    Masukkan suhu [3][0] : 17
+    Masukkan suhu [3][1] : 20
+    Masukkan suhu [3][2] : 19
+    Masukkan suhu [3][3] : 29
+    Masukkan suhu [3][4] : 25
+    Masukkan suhu [3][5] : 19
+    Masukkan suhu [3][6] : 17
+    Masukkan suhu [4][0] : 27
+    Masukkan suhu [4][1] : 37
+    Masukkan suhu [4][2] : 17
+    Masukkan suhu [4][3] : 182
+    Masukkan suhu [4][4] : 17
+    Masukkan suhu [4][5] : 27
+    Masukkan suhu [4][6] : 16
+    Suhu Max : 182.0
     
 
-Penjelasan :
+## Penjelasan :
 
 - Menggunakan library Scanner untuk input user
 - Mendeklarasikan Scanner dan variabel array
@@ -389,7 +389,7 @@ Penjelasan :
         };
 
 
-        double min_bb = data[0][1];
+        int min_bb = data[0][1];
         double total_tb = 0;
         double avg_tb = 0;
         int umur_tertua = data[0][0];
@@ -413,6 +413,7 @@ Penjelasan :
                         avg_tb = total_tb / data.length;
                     }else if(b == 0 && data[a][b] > umur_tertua){ // untuk mencari nama mahasiswa dengan umur yang tertua
                         nama_tertua = nama_mahasiswa[a];
+                        umur_tertua = data[a][b];
 
                     }
 
@@ -423,7 +424,7 @@ Penjelasan :
 
         System.out.println("\n\nBerat Badan terendah adalah \t\t\t: " + min_bb);
         System.out.println("Rata-rata tinggi badan mahasiswa adalah \t: " + avg_tb);
-        System.out.println("Nama Mahasiswa dengan umur tertua adalah \t: " + nama_tertua);
+        System.out.printf("Nama Mahasiswa dengan umur tertua adalah %s yang berumur %d tahun", nama_tertua, umur_tertua);
 ```
 
     Nama	Umur	Berat	Tinggi	
@@ -434,10 +435,16 @@ Penjelasan :
     Ega 	19  	58  	160  	
     
     
-    Berat Badan terendah adalah 			: 45.0
+    Berat Badan terendah adalah 			: 45
     Rata-rata tinggi badan mahasiswa adalah 	: 157.8
-    Nama Mahasiswa dengan umur tertua adalah 	: Beky
-    
+    Nama Mahasiswa dengan umur tertua adalah Beky yang berumur 20 tahun
+
+
+
+
+    java.io.PrintStream@71535267
+
+
 
 Penjelasan :
 
