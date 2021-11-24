@@ -409,7 +409,58 @@ System.out.println("Total nilai "+ total);
 
 ```Java
 // Tuliskan jawaban nomor 2
+import java.util.Scanner;
+Scanner input = new Scanner(System.in);
+
+static int total=0,i;
+static void isiarray (int [] array){
+    Scanner input = new Scanner (System.in);
+    
+    for (i=0;i<array.length; i++){
+     System.out.println("Masukkan data ke- "+i);
+        array[i]=input.nextInt();
+    }
+}
+
+static void tampilArray(int [] arr){
+    for(i=0; i<arr.length; i++){
+        System.out.println("Nilai yang anda inputkan ke "+i);
+        System.out.println(arr[i]);
+    }
+}
+
+static void hitTot( int [] arr ){
+    for(i=0; i<arr.length; i++){
+        total+=arr[i];
+        
+    }
+    System.out.println("Total nilai " + total);
+}
+
+System.out.println("Masukkan jumlah data yang ingin anda inputkan : ");
+int jum=input.nextInt();
+
+int[]dataArray=isiarray(jum);
+tampilArray(dataArray);
+hitTot(dataArray);
 ```
+    Masukkan jumlah data yang ingin anda inputkan : 
+    3
+    Masukkan data ke- 0
+    1
+    Masukkan data ke- 1
+    2
+    Masukkan data ke- 2
+    3
+    Nilai yang anda inputkan ke 0
+    1
+    Nilai yang anda inputkan ke 1
+    2
+    Nilai yang anda inputkan ke 2
+    3
+    Total nilai 6
+    
+
 
 ## Tugas
 
