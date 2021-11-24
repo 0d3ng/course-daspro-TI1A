@@ -299,7 +299,11 @@ System.out.println("Volume balok adalah " + vol);
 #### Pertanyaan
 1. Jelaskan kegunaan parameter yang terdapat didalam fungsi hitungLuas dan hitungVolume!
 
+parameter tersebut berguna sebagai tempat untuk mengikutsertakan suatu value yang terdapat pada variabel di luar fungsi tersebut ke dalam fungsi tersebut
+
 2. Setelah melakukan percobaan 4, menurut anda manakah program yg lebih efisien apakah menggunakan fungsi atau tanpa fungsi? Jelaskan!
+
+Untuk percobaan 4 menurut saya lebih efisien tanpa fungsi, karena outputnya tetap sama dan penulisan code bisa lebih ringkas. Penggunaan fungsi bisa menjadikan suatu program lebih effisien jika terdapat banyak value bervariasi yang ingin dioperasikan menggunakan operasi yang sama.
 
 ### Percobaan 5: Fungsi Menggunakan Array dan Variabel Global
 Pada Percobaan 5, kode program yang dibuat digunakan untuk menghitung total nilai yang ada didalam array dengan membuat 3 fungsi yaitu isiarray, hitTol, dan tampilArray.
