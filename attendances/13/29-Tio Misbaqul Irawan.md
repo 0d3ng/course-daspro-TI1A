@@ -556,7 +556,7 @@ static void totalMenuSales(int[][] salesData, String[] menusName) {
 
 int[][] salesData = { { 20, 15, 35, 24, 70 }, { 30, 40, 10, 28, 35 }, { 5, 10, 50, 48, 15 } };
 String[] menusName = { "Nasi Goreng", "Soto", "Sate" };
-int[] prices = { 20000, 30000, 25000 };
+int[] prices = { 20000, 15000, 25000 };
 
 String divider = "=".repeat(40);
 
@@ -584,7 +584,7 @@ totalMenuSales(salesData, menusName);
     
     Total Pendapatan Restoran
     ========================================
-    Total Pemasukan Restoran: Rp.10770000
+    Total Pemasukan Restoran: Rp.8625000
     ========================================
     
     Total Penjualan Tiap Menu
