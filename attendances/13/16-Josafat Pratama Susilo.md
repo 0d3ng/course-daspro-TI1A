@@ -582,13 +582,15 @@ int jumlahJual[][] = {{20, 15, 35, 24, 70},
 
 String menu[] = {"Nasi goreng", "Soto", "Sate"};
 int harga[] = {20000, 15000, 25000};
+String hariJual[] = {"Senin", "Selasa", "Rabu", "Kamis", "Jumat"};
 
-static String menuFavorit(){
+static String menuFavorit(String hari){
     int totalMenu[] = {0,0,0};
+    int indexHari = Arrays.asList(hariJual).indexOf(hari);
     int max = 0;
     String favorit = "";
     for(int i = 0; i < jumlahJual.length; i++){
-        totalMenu[i] = jumlahJual[i][1] + jumlahJual[i][4];
+        totalMenu[i] = jumlahJual[i][indexHari];
         if(totalMenu[i] > max){
             max = totalMenu[i];
             favorit = menu[i];
@@ -616,24 +618,25 @@ static int[] totalJual(){
     return total;
 }
 
-String menuFavorit;
+String menuFavoritSelasa, menuFavoritJumat;
 int total_pendapatan;
 int total_porsi[] = new int[menu.length];
 
-menuFavorit = menuFavorit();
+menuFavoritSelasa = menuFavorit("Selasa");
+menuFavoritJumat = menuFavorit("Jumat");
 total_pendapatan = hitungTotal();
 total_porsi = totalJual();
 
-System.out.println("Menu favorit hari selasa dan jumat\t: " + menuFavorit);
-System.out.println("Total pendapatan dalam 1 minggu\t\t: " + total_pendapatan);
+System.out.println("===Menu favorit===");
+System.out.println("Menu favorit hari selasa adalah " + menuFavoritSelasa);
+System.out.println("Menu favorit hari jumat adalah " + menuFavoritJumat);
 
+System.out.println("\n===Total  Pendapatan===");
+System.out.println("Total pendapatan dalam 1 minggu adalah Rp." + total_pendapatan);
+
+System.out.println("\n===Total Penjualan Setiap Menu===");
 for(int i = 0; i < jumlahJual.length; i++){
-    if(menu[i] == "Nasi goreng"){
-        System.out.printf("Total menu %s terjual\t\t: %d \n", menu[i], total_porsi[i]);
-    }
-    else{
-        System.out.printf("Total menu %s terjual\t\t\t: %d \n", menu[i], total_porsi[i]);
-    }
+    System.out.printf("Total menu %s terjual adalah %d \n", menu[i], total_porsi[i]);
 }
 
 // Program diatas terdapat tiga fungsi yang semuanya memiliki nilai kembalian / return. Fungsi menuFavorit berfungsi untuk 
@@ -644,11 +647,17 @@ for(int i = 0; i < jumlahJual.length; i++){
 // array.
 ```
 
-    Menu favorit hari selasa dan jumat	: Nasi goreng
-    Total pendapatan dalam 1 minggu		: 8625000
-    Total menu Nasi goreng terjual		: 164 
-    Total menu Soto terjual			: 143 
-    Total menu Sate terjual			: 128 
+    ===Menu favorit===
+    Menu favorit hari selasa adalah Soto
+    Menu favorit hari jumat adalah Nasi goreng
+    
+    ===Total  Pendapatan===
+    Total pendapatan dalam 1 minggu adalah Rp.8625000
+    
+    ===Total Penjualan Setiap Menu===
+    Total menu Nasi goreng terjual adalah 164 
+    Total menu Soto terjual adalah 143 
+    Total menu Sate terjual adalah 128 
 
 
 
