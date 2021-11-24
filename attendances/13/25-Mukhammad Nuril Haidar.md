@@ -406,6 +406,7 @@ System.out.println("Total nilai "+ total);
 
 2. Menurut pendapat anda apakah fugsi isiarray dan hitTot dapat diganti dengan tipe void? Jelaskan dan buktikan dengan program!
 
+- bisa saja dengan menggunakan pass by reference untuk function isiarray, dan menampilkan hitTot tidak menggunakan return
 
 ```Java
 // Tuliskan jawaban nomor 2
