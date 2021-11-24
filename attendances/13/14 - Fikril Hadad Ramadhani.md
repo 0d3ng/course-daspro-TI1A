@@ -32,6 +32,7 @@ beriSalam();
 
     Halo! Selamat Pagi
 
+> void berati fungsi ini merupakan fungsi yang tidak mengembalikan nilai apapun. dengan begini, setelah code dalam fungsi dijalankan(dengan  cara memanggil code di bagian fungsi main), fungsi ini tidak  akan mengembalikan nilai apapun. jadi hanya akan mencetak Halo! Selamat Pagi.
 
 3. Buat fungsi **beriUcapan** dengan sebuah parameter bertipe String.
 ![Gambar 3](images/1.3.png)
@@ -57,6 +58,7 @@ beriUcapan(salam);
     Halo! Selamat Pagi
     Selamat datang di Pemrograman Java
 
+> kita dapat memberi atribut atau parameter ke dalam suatu fungsi tertentu. pada hal ini, kita mengisi parameter berupa String. string pada parameter ini akan di print menggunakan perintah sout pada badan fungsi. parameter bisa kita masukkan apapun dengan tipe data String. maka dari itu, pada badan main, kita masukkan String salam. Hasilnya, nilai yang ada pada variabel salam di cetak.
 
 #### Pertanyaan
 1. Jelaskan perbedaan fungsi **beriSalam** dan **beriUcapan** pada praktikum 1!
@@ -88,6 +90,8 @@ System.out.println("Luas Persegi dengan sisi 5 = " + luasan);
 
     Luas Persegi dengan sisi 5 = 25
 
+> pada fungsi kali ini, parameternya berupa int. maka dari itu, pada fungsi main, kita memasukkan nilai angka pada (). nilai 5 yang telah diinputkan akan di tampung pada sisi, kemudian diolah sesuai dengan kode. kemudian, nilai luas akan di kembalikan ke fungsi main.
+
 
 #### Pertanyaan
 1. jelaskan mengapa ketika memanggil fungsi **luasPersegi** harus membuat variabel baru yaitu luasan?
@@ -117,6 +121,7 @@ System.out.println("Luas Persegi dengan sisi "+ sisiInput +" = " + luasan);
     Masukkan sisi persegi: 5
     Luas Persegi dengan sisi 5 = 25
 
+> pada kode kali ini, kita mencoba untuk meminta input dari user. inputan dari user ini akan dimasukkan ke parameter fungsi LuasPersegi(). kemudian akan diolah dan nilai yang ditampung dalam variabel luas akan di kembalikan di fungsi main.
 
 ### Percobaan 3: Fungsi dapat meng-CALL Fungsi Lain
 Pada Percobaan 3, kode program yang dibuat digunakan untuk mengimplementasikan bahwa fungsi dapat meng-CALL fungsi yang lain. Dimana dalam percobaan ini terdapat fungsi **Kali dan Kurang**. 
@@ -238,6 +243,7 @@ System.out.println("Volume Balok adalah " + vol);
     Luas Persegi panjang adalah 40
     Volume Balok adalah 120
 
+> pertama, kita meminta nilai dari panjang, lebar, dan tinggi dari balok. kemudian, akan diolah seperti kode. setelah diolah, akan dioutput seperti pada di perintah sout.
 
 4. Program menghitung luas persegi dan volume balok diatas jika dibuatkan fungsi maka terdapat 3 fungsi yaitu hitungLuas, hitungVolume dan fungsi main, seperti dibawah ini:
 
@@ -288,6 +294,7 @@ System.out.println("Volume Balok adalah " + vol);
     Luas Persegi Panjang adalah 40
     Volume Balok adalah 120
 
+> secara garis besar hampir sama dengan apa yang kita lakukan pada kode program sebelumnya. perbedaannya terletak pada penggunaan fungsi.
 
 #### Pertanyaan
 1. Jelaskan kegunaan parameter yang terdapat didalam fungsi hitungLuas dan hitungVolume!
@@ -369,6 +376,7 @@ System.out.println("Total nilai adalah " + total);
     Nilai yang anda inputkan ke-3: 8
     Total nilai adalah 23
 
+> pertama, kita meminta jumlah data yang akan dimasukkan. nilai ini akan menjadi panjang dari array pada fungsi isiArray. kemudian, kita akan memanggil fungsi isiArray, dimana fungsi ini akan meminta inputan dari kita dan akan merekamnya ke dalam array. setelah itu, kita juga memanggil fungsi tampilArray. fungsi tampilArray akan menampilkan nilai dari nilai yang telah kita inputkan satu persatu. kemudian, kita menampung nilai dari fungsi hitTot ke dalam variabel total. 
 
 ###### Pertanyaan
 1. Jelaskan mengapa fungsi tampil array dibuat bertipe void, sedangkan isiarray dan hitTot bertipe int!
@@ -505,6 +513,8 @@ System.out.print("Nilai tertinggi dari ketiga nilai adalah: " + Max3(nilai1, nil
     Masukkan nilai ketiga	: 72
     Nilai tertinggi dari ketiga nilai adalah: 72
 
+> pertama, kita meminta input kepada user. ketiga nilai tersebut akan di olah pada fungsi Max3. pada fungsi Max3 ketiga nilai akan di masukkan pada array. kemudian, kita akan melakukan pemeriksaan terhadap nilai pada array satu satu dimana nilai terbesar akan disimpan di variabel tertinggi. setelah itu, fungsi akan mereturn nilai return.
+
 2. Disebuah restoran terdapat 3 menu yang dijual yaitu nasi goreng, soto, dan sate. Harga nasi goreng Rp. 20.000, soto Rp. 15.000, dan sate Rp. 25.000. Restoran tersebut buka dari hari senin sampai jumat. Berikut ini merupakan tabel pejualan perhari untuk masing-masing menu di restoran tersebut dari hari senin sampai jumat
 ![Gambar 13](images/soal3.png)
 
@@ -623,11 +633,13 @@ Buatlah Fungsi sebagai berikut:
 ```
 
 
-> Menu favorit pada hari Selasa adalah Soto
->Menu favorit pada hari Jum'at adalah Nasi Goreng
->
->Jumlah pemasukan dari Senin sampai Jum'at adalah 8625000
->
->Jumlah porsi yang terjual untuk Nasi Goreng adalah 164
->Jumlah porsi yang terjual untuk Soto adalah 143
->Jumlah porsi yang terjual untuk Sate adalah 128
+Menu favorit pada hari Selasa adalah Soto
+Menu favorit pada hari Jum'at adalah Nasi Goreng
+
+Jumlah pemasukan dari Senin sampai Jum'at adalah 8625000
+
+Jumlah porsi yang terjual untuk Nasi Goreng adalah 164
+Jumlah porsi yang terjual untuk Soto adalah 143
+Jumlah porsi yang terjual untuk Sate adalah 128
+
+> pertama saya menginisialisasi array secara global. fungsi fav() berfungsi untuk mencari menu favoit dengan menscan kolom index 1 dan index 4. fungsi totalKeuntungan() akan menjumlah secara horizontal. kemudian akan dikalikan tiap2 baris dengan harganya. fungsi NasiGoreng(), Soto(), Sate() akan mengembalikan nilai jumlah dari tiap tiap baris yang merepresentasikan jumlah tiap menu. 
