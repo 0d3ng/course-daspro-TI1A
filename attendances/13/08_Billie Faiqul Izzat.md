@@ -471,7 +471,6 @@ Buatlah Fungsi sebagai berikut:
 
 ```Java
 // Tuliskan jawaban nomor 2
-// Tuliskan jawaban nomor 2
     static int porsi[][] = { { 20, 15, 35, 24, 70 }, { 30, 40, 10, 28, 35 }, { 5, 10, 50, 48, 15 } };
 
     static void fav() {
