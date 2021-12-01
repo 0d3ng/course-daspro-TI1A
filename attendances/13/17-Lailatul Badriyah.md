@@ -651,7 +651,7 @@ String namaMakanan[] = {"Nasi goreng","Soto","Sate"};
 
 20. **for(int a = 0; a < dataPorsi[0].length; a++){ totalPorsiNasigoreng = totalPorsiNasigoreng + dataPorsi[0][a]; totalPorsiSoto = totalPorsiSoto + dataPorsi[1][a]; totalPorsiSate = totalPorsiSate + dataPorsi[2][a];** = perulangan untuk menghitung total porsi.
 
-21. ** pemasukanNasigoreng = (totalPorsiNasigoreng * hargaNasigoreng); int pemasukanSoto = (totalPorsiSoto * hargaSoto); int pemasukanSate = (totalPorsiSate * hargaSate);** = untuk menghitung harga tiap menu dengan total porsi dengan cara total porsi menu dikali harga menu.
+21. **pemasukanNasigoreng = (totalPorsiNasigoreng * hargaNasigoreng); int pemasukanSoto = (totalPorsiSoto * hargaSoto); int pemasukanSate = (totalPorsiSate * hargaSate);** = untuk menghitung harga tiap menu dengan total porsi dengan cara total porsi menu dikali harga menu.
 
 22. **float totalPemasukan = pemasukanNasigoreng + pemasukanSoto + pemasukanSate; System.out.println("Pemasukkan restoran tersebut mulai hari Senin sampai Jumat adalah Rp. "+totalPemasukan);** = setelah ketiga makanan tersebut dihitung, maka ketiga makanan tersebut dijumlahkan. Kemudian terdapat output pemasukan restoran dari hari Senin sampai Jumat.
 

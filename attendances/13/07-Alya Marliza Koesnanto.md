@@ -27,9 +27,6 @@
 static void beriSalam(){
     System.out.println("Halo! Selamat Pagi");
 }
-static void beriSalam(){
-    System.out.println("Halo! Selamat Pagi");
-}
 beriSalam();
 ```
 
@@ -48,29 +45,31 @@ beriSalam();
 static void beriSalam(){
     System.out.println("Halo! Selamat Pagi");
 }
+
 static void beriUcapan(String ucapan){
     System.out.println(ucapan);
 }
 
 beriSalam();
-String salam = "Selamat datang di pemograman Java";
+String salam = "Selamat datang di pemrograman Java";
 beriUcapan(salam);
 ```
 
     Halo! Selamat Pagi
-    Selamat datang di pemograman Java
+    Selamat datang di pemrograman Java
 
 
 #### Pertanyaan
 1. Jelaskan perbedaan fungsi **beriSalam** dan **beriUcapan** pada praktikum 1!
 
-perbedaanya adalah pada beriSalam tidak menggunakan parameter sedangkakn beriUcapan menggunakan prameter
+**Jawaban :**
+Fungsi beriSalam bekerja tanpa parameter, sedangkan fungsi beriUcapan bekerja dengan parameter yang sudah dimasukkan atau parameter berfungsi untuk menjalankan fungsi beriUcapan yang menggunakan tipe data string.
 
 2. Jelaskan cara pemanggilan sebuah fungsi void yang berparameter dan tanpa parameter!
 
-fungsi void yang menggunakan parameter, kita membuat parameter bernama ucapan dengan tipe String, Sehingga kita bisa menggunakan variabel ucapan di dalam fungsi dan variabel yang dipanggil harus memiliki tipe data yang sama dengan parameternya karna kita menggunakan string jadi saat dipanggil harus mengnakan string.
-fungsi void tanpa parameter, cukup dengan menuliskan nama fungsi itu secara lengkap.
-
+**Jawaban :**
+**Dengan Parameter :** namaFungsi()}
+**Tanpa Parameter :** public static void main (String[] args){namaFungsi():}
 
 ### Percobaan 2: Fungsi dengan return value (Bukan void)
 Pada Percobaan 2, kode program yang dibuat digunakan untuk menghitung luas persegi dengan membuat fungsi **luasPersegi** yang menggunakan parameter.
@@ -87,8 +86,9 @@ static int luasPersegi(int sisi){
     int luas = sisi * sisi;
     return luas;
 }
-int luasan = luasPersegi(5);
-System.out.println("Luas Persegi dengan sisi 5 = " + luasan);
+
+    int luasan = luasPersegi(5);
+    System.out.println("Luas Persegi dengan sisi 5 = " + luasan);
 ```
 
     Luas Persegi dengan sisi 5 = 25
@@ -97,18 +97,44 @@ System.out.println("Luas Persegi dengan sisi 5 = " + luasan);
 #### Pertanyaan
 1. jelaskan mengapa ketika memanggil fungsi **luasPersegi** harus membuat variabel baru yaitu luasan?
 
-untuk menampung hasil yang di kembalikan luas persegi, oleh karena itu kita kita harus membuat variabel yang bertipe data sama yaitu integer
+**Jawaban :**
+Karena untuk menampung variabel baru yang akan menjadi hasil keluaran dari pemrograman diatas.
 
 2. Jelaskan kegunaan **return luas** pada percobaan 2 diatas!
 
-return luas digunakan untuk mengembalikan hasil pengoprasian variabel luas
+**Jawaban :**
+Fungsi dari **return luas** sendiri adalah mengembalikan nilai int luas.
 
 3. Modifikasilah program di percobaan 2, dengan membuat panjang **sisi** sebagai inputan!
 
 
 ```Java
 // Tuliskan jawaban nomor 2
+import java.util.Scanner;
+Scanner input = new Scanner (System.in);
+int sisi = 0;
+System.out.println("Masukkan panjang sisi Persegi :");
+int sisi = input.nextInt();
+
+static int luasPersegi(int sisi){
+    int luas = sisi * sisi;
+    return luas;
+}
+   
+    int luasan = luasPersegi(sisi);
+    System.out.printf("Luas Persegi dengan sisi %d = %d", sisi, luasan);
 ```
+
+    Masukkan panjang sisi Persegi :
+    7
+    Luas Persegi dengan sisi 7 = 49
+
+
+
+
+    java.io.PrintStream@5741bc1a
+
+
 
 ### Percobaan 3: Fungsi dapat meng-CALL Fungsi Lain
 Pada Percobaan 3, kode program yang dibuat digunakan untuk mengimplementasikan bahwa fungsi dapat meng-CALL fungsi yang lain. Dimana dalam percobaan ini terdapat fungsi **Kali dan Kurang**. 
@@ -128,31 +154,33 @@ Pada Percobaan 3, kode program yang dibuat digunakan untuk mengimplementasikan b
 // Tuliskan kode program Percobaan 3 Langkah 1, 2, 3 & 4
 static int Kali(int C, int D){
     int H;
-    H = (C+10) % (D + 19);
+    H = (C + 10) % (D + 19);
     return H;
 }
-static int Kurang (int A, int B){
+
+static int Kurang(int A, int B){
     int X;
     A = A + 7;
     B = B + 4;
     X = Kali(A, B);
     return X;
 }
+
 int nilai1, nilai2;
-Scanner input =new Scanner (System.in);
-System.out.println("Masukkan Nilai 1:");
-nilai1=input.nextInt();
-System.out.println("Masukkan Nilai 2:");
-nilai2=input.nextInt();
-int hasil = Kurang (nilai1, nilai2);
+Scanner input = new Scanner(System.in);
+System.out.println("Masukkan Nilai 1: ");
+nilai1 = input.nextInt();
+System.out.println("Masukkan Nilai 2: ");
+nilai2 = input.nextInt();
+int hasil = Kurang(nilai1, nilai2);
 System.out.println("Hasil akhir adalah " + hasil);
 ```
 
-    Masukkan Nilai 1:
-    28
-    Masukkan Nilai 2:
-    13
-    Hasil akhir adalah 9
+    Masukkan Nilai 1: 
+    2
+    Masukkan Nilai 2: 
+    6
+    Hasil akhir adalah 19
 
 
 #### Pertanyaan
@@ -161,40 +189,39 @@ System.out.println("Hasil akhir adalah " + hasil);
 
 ```Java
 // Tuliskan jawaban nomor 1
-static int Kali(int C, int D){
+static int Kali(int C, int D) {
     int H;
-    C = C + 10;
-    D = D + 19;
-    H = Kurang(C, D);
+    H = (C + 10) % (D + 19);
     return H;
 }
-static int Kurang (int A, int B){
+static int Kurang(int A, int B){
     int X;
     A = A + 7;
     B = B + 4;
-    X = (A%B);
+    X = A - B;
     return X;
 }
 int nilai1, nilai2;
-Scanner input =new Scanner (System.in);
+Scanner input = new Scanner (System.in);
 System.out.println("Masukkan Nilai 1:");
-nilai1=input.nextInt();
+nilai1 = input.nextInt();
 System.out.println("Masukkan Nilai 2:");
-nilai2=input.nextInt();
-int hasil = Kali (nilai1, nilai2);
+nilai2 = input.nextInt();
+int hasil = Kali(nilai1, nilai2);
 System.out.println("Hasil akhir adalah " + hasil);
 ```
 
     Masukkan Nilai 1:
     4
     Masukkan Nilai 2:
-    4
-    Hasil akhir adalah 21
+    5
+    Hasil akhir adalah 14
 
 
 2. Jelaskan alur jalannya program di percobaan 3 mulai dari input sampai keluar output!
 
-    pertama membuat fungsi kali yang memiliki dua parameter betipe data integer yaitu c dan d . parameter c kita tambah 10 dan parameter d kita tambah 19. dua parameter yang telah ita oprasikan kita masukkan ke fungsi kurang.
+**Jawaban :**
+Disini pengguna harus memasukan 2 nilai yaitu 1 dan 2 yang berfungsi untuk menjalankan parameter fungsi kurang. Lalu pada nilai 1, nilai yang dimasukkan pengguna akan ditambahkan dengan 7 dan pada nilai 2, nilai yang dimasukkan akan ditambah dengan 4. Lalu akan diproses kembali melalui perhitungan (C + 10) % (D + 19). Lalu hasil dari C dan D akan ditambahkan pada hasil fungsi kurang tadi dan muncul sebagai nilai keluaran.
 
 ### Percobaan 4: Mengubah Program Tidak Menggunakan Fungsi dan Menggunakan Fungsi
 Pada Percobaan 4, kode program yang dibuat digunakan untuk menghitung luas persegi panjang dan volume balok tanpa menggunakan fungsi dan dengan menggunakan fungsi.
@@ -212,29 +239,31 @@ Pada Percobaan 4, kode program yang dibuat digunakan untuk menghitung luas perse
 // Tuliskan kode program Percobaan 4 Langkah 1, 2, & 3
 import java.util.Scanner;
 Scanner input = new Scanner(System.in);
+
 int p,l,t,L,vol;
-System.out.println("Masukkan Panjang");
+
+System.out.println("Masukkan panjang");
 p=input.nextInt();
-System.out.println("Masukkan Lebar");
+System.out.println("Masukkan lebar");
 l=input.nextInt();
-System.out.println("Masukkan Tinggi");
+System.out.println("Masukkan tinggi");
 t=input.nextInt();
 
 L=p*l;
 System.out.println("Luas Persegi panjang adalah "+L);
 
 vol=p*l*t;
-System.out.println("Volume Balok adalah "+vol);
+System.out.println("Volume balok adalah "+vol);
 ```
 
-    Masukkan Panjang
-    4
-    Masukkan Lebar
-    5
-    Masukkan Tinggi
-    3
-    Luas Persegi panjang adalah 20
-    Volume Balok adalah 60
+    Masukkan panjang
+    7
+    Masukkan lebar
+    8
+    Masukkan tinggi
+    9
+    Luas Persegi panjang adalah 56
+    Volume balok adalah 504
 
 
 4. Program menghitung luas persegi dan volume balok diatas jika dibuatkan fungsi maka terdapat 3 fungsi yaitu hitungLuas, hitungVolume dan fungsi main, seperti dibawah ini:
@@ -255,48 +284,50 @@ Fungsi hitungVolume
 
 ```Java
 // Tuliskan kode program Percobaan 4 Langkah 1, 2, & 3
-static int hitungLuas(int pjg, int lb){
-    int Luas=pjg*lb;
+static int hitungLuas(int pjg, int lbr){
+    int Luas = pjg * lbr;
     return Luas;
 }
+
 static int hitungVolume(int tinggi, int a, int b){
-    int volume= hitungLuas(a,b)*tinggi;
+    int volume = hitungLuas(a,b) * tinggi;
     return volume;
 }
+
+import java.util.Scanner;
 Scanner input = new Scanner(System.in);
-int p,l,t,L,vol;
-System.out.println("Masukkan Panjang");
-p=input.nextInt();
-System.out.println("Masukkan Lebar");
-l=input.nextInt();
-System.out.println("Masukkan Tinggi");
-t=input.nextInt();
+int p, l, t, L, vol;
+System.out.print("Masukkan panjang : ");
+p = input.nextInt();
+System.out.print("Masukkan lebar : ");
+l = input.nextInt();
+System.out.print("Masukkan tinggi : ");
+t = input.nextInt();
 
-L=p*l;
-System.out.println("Luas Persegi panjang adalah "+L);
+L = hitungLuas(p, l);
+System.out.println("Luas Persegi panjang adalah : " + L);
 
-vol=p*l*t;
-System.out.println("Volume Balok adalah "+vol);
+vol = hitungVolume(t, p, l);
+System.out.println("Volume Balok adalah : " + vol);
 ```
 
-    Masukkan Panjang
-    4
-    Masukkan Lebar
-    2
-    Masukkan Tinggi
-    4
-    Luas Persegi panjang adalah 8
-    Volume Balok adalah 32
+    Masukkan panjang : 7
+    Masukkan lebar : 7
+    Masukkan tinggi : 6
+    Luas Persegi panjang adalah : 49
+    Volume Balok adalah : 294
 
 
 #### Pertanyaan
 1. Jelaskan kegunaan parameter yang terdapat didalam fungsi hitungLuas dan hitungVolume!
 
-parameter tersebut digunakan untuk menjadi nilai nilai yang akan dioprasikan di perhitungan luas dan volume
+**Jawaban :**
+Fungsi dari parameter fungsi hitungLuas dan hitungVolume bekerja sebagai penampung nilai yang dimasukkan untuk fungsi hitungLuas dan hitungVolume, dengan adanya parameter maka kita dapat melakukan panggilan fungsi dengan nilai masukkan yang berbeda.
 
 2. Setelah melakukan percobaan 4, menurut anda manakah program yg lebih efisien apakah menggunakan fungsi atau tanpa fungsi? Jelaskan!
 
-menurut saya menggunakan fungsi karna dapat di panggil berkali kali dengan nilai yang berbeda
+**Jawaban :**
+Menurut saya lebih efisien menggunakan fungsi karena pemanggilan fungsi dapat diberlakukan berkali-kali dengan nilai yang berbeda.
 
 ### Percobaan 5: Fungsi Menggunakan Array dan Variabel Global
 Pada Percobaan 5, kode program yang dibuat digunakan untuk menghitung total nilai yang ada didalam array dengan membuat 3 fungsi yaitu isiarray, hitTol, dan tampilArray.
@@ -326,64 +357,65 @@ Pada Percobaan 5, kode program yang dibuat digunakan untuk menghitung total nila
 
 ```Java
 // Tuliskan kode program Percobaan 4 Langkah 1 s/d 6
-static int total=0,i;
-static int[] isiarray (int angka){
-    Scanner input = new Scanner (System.in);
-    int array[]=new int[angka];
-    for (i=0;i<array.length; i++){
-     System.out.println("Masukkan data ke- "+i);
-        array[i]=input.nextInt();
+import java.util.Scanner;
+static int total = 0, i;
+
+static int[] isiarray(int angka){
+    Scanner sc = new Scanner(System.in);
+    int array[] = new int[angka];
+    for(int i = 0; i < array.length; i++){
+        System.out.printf("Masukkan data ke-%d :",i);
+        array[i] = sc.nextInt();
     }
- return array;   
+    return array;
 }
-static void tampilArray(int [] arr){
-    for(i=0; i<arr.length; i++){
-        System.out.println("Nilai yan anda inputkan ke  "+i);
+
+static void tampilArray(int[] arr){
+    for(int i = 0; i < arr.length; i++){
+        System.out.println("Nilai yang anda inputkan ke- " + i);
         System.out.println(arr[i]);
     }
+    
 }
-static int hitTot( int []arr ){
-    for(i=0; i<arr.length; i++){
-        total+=arr[i];
-        
+
+static int hitTot(int[] arr){
+    for(int i = 0; i < arr.length; i++){
+        total += arr[i];
     }
     return total;
 }
-import java.util.Scanner;
+
 Scanner input = new Scanner(System.in);
-System.out.println("Masukkan jumlah data yang ingin anda inputkan: ");
-int jum=input.nextInt();
-int[]dataArray=isiarray(jum);
+System.out.print("Masukkan jumlah data yang ingin anda inputkan: ");
+int jum = input.nextInt();
+int []dataArray = isiarray(jum);
 tampilArray(dataArray);
-total= hitTot(dataArray);
-System.out.println("Total nilai = "+total);
+total = hitTot(dataArray);
+System.out.println("Total nilai = " + total);
 ```
 
-    Masukkan jumlah data yang ingin anda inputkan: 
+    Masukkan jumlah data yang ingin anda inputkan: 2
+    Masukkan data ke-0 :2
+    Masukkan data ke-1 :3
+    Nilai yang anda inputkan ke- 0
+    2
+    Nilai yang anda inputkan ke- 1
     3
-    Masukkan data ke- 0
-    4
-    Masukkan data ke- 1
-    2
-    Masukkan data ke- 2
-    5
-    Nilai yan anda inputkan ke  0
-    4
-    Nilai yan anda inputkan ke  1
-    2
-    Nilai yan anda inputkan ke  2
-    5
-    Total nilai = 11
+    Total nilai = 5
 
 
 #### Pertanyaan
 1. Jelaskan mengapa fungsi tampil array dibuat bertipe void, sedangkan isiarray dan hitTot bertipe int!
 
-karna fungsi array hanya mengeksekusi perintah System.out.print dan tidak perlu mengembalikan nilai apapun.
+**Jawaban :**
+Fungsi void sendiri adalah tidak mengembalikan nilai tanpa perintah **"Return"**, maka fungsi tampil array menggunakan void untuk mendapatkan nilai kembali tanpa menggunakan perintah **"Return"**. 
+
+Pada fungsi isi array dan hitTot menggunakan **"Int"** berfungsi untuk mengembalikan nilai yang bertipe **"Int"** dan untuk mengembalikan nilai ini dibutuhkan perintah **"Return"**.
 
 2. Menurut pendapat anda apakah fugsi isiarray dan hitTot dapat diganti dengan tipe void? Jelaskan dan buktikan dengan program!
 
-bisa, tapi kita harus membuat array di fungsi main kemudian pada fungsi isi array kita beri parameter array. fungsi isiarray meminta inputan dari user untuk dimasukkan ke dataArray
+**Jawaban :**
+Bisa, dengan merubah semua ke fungsi **"Void"** maka perintah **"Return"** harus dihilangkan. Lalu untuk total dari program diatas akan dipindah dalam bentuk variabel, yang berarti menggunakan perintah tipe data untuk menampilkan total keseluruhan.
 
 
 ```Java
@@ -391,12 +423,14 @@ bisa, tapi kita harus membuat array di fungsi main kemudian pada fungsi isi arra
 import java.util.Scanner;
 static int total = 0, i;
 
-static void isiarray(int[] angka){
+static int[] isiarray(int angka){
     Scanner sc = new Scanner(System.in);
-    for(int i = 0; i < angka.length; i++){
-        System.out.printf("Masukkan data ke-%d :",i);
-        angka[i] = sc.nextInt();
+    int array[] = new int[angka];
+    for(int i = 0; i < array.length; i++){
+        System.out.printf("Masukkan data ke-:",i);
+        array[i] = sc.nextInt();
     }
+    return array;
 }
 
 static void tampilArray(int[] arr){
@@ -411,54 +445,69 @@ static void hitTot(int[] arr){
     for(int i = 0; i < arr.length; i++){
         total += arr[i];
     }
-    System.out.println("Total Nilai = " + total);
 }
 
 Scanner input = new Scanner(System.in);
 System.out.print("Masukkan jumlah data yang ingin anda inputkan: ");
 int jum = input.nextInt();
-int []dataArray = new int[jum];
-
-isiarray(dataArray);
+int []dataArray = isiarray(jum);
 tampilArray(dataArray);
 hitTot(dataArray);
+System.out.println("Total nilai = " + total);
 ```
 
-    Masukkan jumlah data yang ingin anda inputkan: 3
-    Masukkan data ke-0 :5
-    Masukkan data ke-1 :7
-    Masukkan data ke-2 :8
+    Masukkan jumlah data yang ingin anda inputkan: 5
+    Masukkan data ke-:3
+    Masukkan data ke-:4
+    Masukkan data ke-:5
+    Masukkan data ke-:6
+    Masukkan data ke-:7
     Nilai yang anda inputkan ke- 0
-    5
+    3
     Nilai yang anda inputkan ke- 1
-    7
+    4
     Nilai yang anda inputkan ke- 2
-    8
-    Total Nilai = 20
+    5
+    Nilai yang anda inputkan ke- 3
+    6
+    Nilai yang anda inputkan ke- 4
+    7
+    Total nilai = 25
 
 
 ## Tugas
 
 1. Buatlah sebuah static method yang bernama Max3(int bil1, int bil2, int bil3) yang menerima 3 buah parameter bilangan integer dan mengembalikan sebuah bilangan integer yang merupakan nilai maksimum diantara ketiga bilangan tersebut. 
 
+
 ```Java
 // Tuliskan jawaban nomor 1
 static int Max3(int bil1, int bil2, int bil3) {
-    int max[] = {bil1, bil2, bil3};
-    int tertinggi = 0;
-    for(int i = 0; i < max.length; i++) {
-        if ( max[i] > tertinggi) {
-            tertinggi = max[i];
-        }
+    int maxi = 0;
+    if (bil1 > bil2 && bil1 > bil3){
+        maxi = bil1;
+    }else if (bil2 > bil1 && bil2 > bil3){
+            maxi = bil2;
+        }else{
+            maxi = bil3;
     }
-    return tertinggi;
+    return maxi;
 }
-System.out.print("Nilai tertinggi dari ketiga nilai adalah: " + Max3(10,8,9));
+System.out.println("Nilai Max 1 :");
+System.out.println(Max3(1, 2, 3));
+System.out.println("Nilai Max 2 :");
+System.out.println(Max3(1, 3, 5));
+System.out.println("Nilai Max 3 :");
+System.out.println(Max3(10, 20, 30));
 ```
 
-    Nilai tertinggi dari ketiga nilai adalah: 10
+    Nilai Max 1 :
+    3
+    Nilai Max 2 :
+    5
+    Nilai Max 3 :
+    30
 
-intinya tiga parameter yang telah saya tetapkan di fungsi main akan diproses di fungsi max3
 
 2. Disebuah restoran terdapat 3 menu yang dijual yaitu nasi goreng, soto, dan sate. Harga nasi goreng Rp. 20.000, soto Rp. 15.000, dan sate Rp. 25.000. Restoran tersebut buka dari hari senin sampai jumat. Berikut ini merupakan tabel pejualan perhari untuk masing-masing menu di restoran tersebut dari hari senin sampai jumat
 ![Gambar 13](images/soal3.png)
@@ -470,122 +519,95 @@ Buatlah Fungsi sebagai berikut:
 
 
 ```Java
-// Tuliskan jawaban nomor 2
-    static int porsi[][] = { { 20, 15, 35, 24, 70 }, { 30, 40, 10, 28, 35 }, { 5, 10, 50, 48, 15 } };
+// Tuliskan jawaban nomor 2// Tuliskan jawaban nomor 2
+String namaMakanan[] = {"Nasi Goreng", "Soto", "Sate"};
+String hari[] = {"Senin", "Selasa", "Rabu", "Kamis", "Jum'at"};
 
-    static void fav() {
-        int i = 0, max = 0, indexTertinggi = 0;
-        while (i < porsi.length) {
-            if (porsi[i][1] > max) {
-                max = porsi[i][1];
-                indexTertinggi = i;
-            }
-            i++;
-        }
-        switch (indexTertinggi) {
-        case 0:
-            System.out.println("Menu favorit pada hari Selasa adalah Nasi Goreng");
-            break;
-        case 1:
-            System.out.println("Menu favorit pada hari Selasa adalah Soto");
-            break;
-        case 2:
-            System.out.println("Menu favorit pada hari Selasa adalah Sate");
-            break;
-        default:
-            break;
-        }
-        i = 0;
-        max = 0;
-        do {
-            if (porsi[i][4] > max) {
-                max = porsi[i][4];
-                indexTertinggi = i;
-            }
-            ++i;
-        } while (i < porsi.length);
-        switch (indexTertinggi) {
-        case 0:
-            System.out.println("Menu favorit pada hari Jum'at adalah Nasi Goreng");
-            break;
-        case 1:
-            System.out.println("Menu favorit pada hari Jum'at adalah Soto");
-            break;
-        case 2:
-            System.out.println("Menu favorit pada hari Jum'at adalah Sate");
-            break;
-        default:
-            break;
+int porsi[][] = {
+    {20, 15, 35, 24, 70},
+    {30, 40, 10, 28, 35},
+    {5, 10, 50, 48, 15}
+};
+
+static void kesukaan1(){
+    int suka = 0;
+    int maks = 0;
+    for (int a = 0; a < namaMakanan.length; a++){
+        if (porsi[a][1] > maks){
+            maks = porsi[a][1];
+            suka = a;
         }
     }
+System.out.println("\nMenu Favorit");
+     System.out.println("\nMenu makanan favorit di Hari Selasa adalah" + namaMakanan[suka]); 
+}
 
-    static int totalKeuntungan() {
-        int nasiGoreng = 20000, soto = 15000, sate = 25000;
-        byte i = 0;
-        int jumlahNasGor = 0, jumlahSoto = 0, jumlahSate = 0;
-        while (i < porsi[0].length) {
-            jumlahNasGor += porsi[0][i];
-            jumlahSoto += porsi[1][i];
-            jumlahSate += porsi[2][i];
-            ++i;
+static void kesukaan2(){
+    int suka1 = 0;
+    int maks1 = 0;
+    for (int b = 0; b < namaMakanan.length; b++){
+        if (porsi[b][4] > maks1){
+            maks1 = porsi[b][4];
+            suka1 = b;
         }
-        jumlahNasGor *= nasiGoreng;
-        jumlahSate *= sate;
-        jumlahSoto *= soto;
-
-        int jumlah = jumlahNasGor + jumlahSate + jumlahSoto;
-        return jumlah;
     }
+     System.out.println("\nMenu makanan favorit di Hari Jum'at adalah" + namaMakanan[suka1]);
+}
 
-    static int NasiGoreng() {
-        byte i = 0;
-        int jumlahNasGor = 0;
-        while (i < porsi[0].length) {
-            jumlahNasGor += porsi[0][i];
-            ++i;
-        }
-        return jumlahNasGor;
+static void pendapatan(){
+    int totNasgor = 0;
+    int totSoto = 0;
+    int totSate = 0;
+    int hargaNasgor = 20000;
+    int hargaSoto = 15000;
+    int hargaSate = 25000;
+    
+    for (int a = 0; a < porsi[0].length; a++){
+        totNasgor = totNasgor + porsi[0][a];
+        totSoto = totSoto + porsi[1][a];
+        totSate = totSate + porsi[2][a];
     }
+double untungNasigoreng = totNasgor * hargaNasgor;
+double untungSoto = totSoto * hargaSoto;
+double untungSate = totSate * hargaSate;
+double masukkan = untungNasigoreng + untungSoto + untungSate;
+System.out.println("\nPendapatan Rumah Makan");
+System.out.println("Pendapatan Rumah Makan setiap hari Senin - Jum'at sekitar Rp " + masukkan);
+}
 
-    static int Soto() {
-        byte i = 0;
-        int jumlahSoto = 0;
-        while (i < porsi[0].length) {
-            jumlahSoto += porsi[1][i];
-            ++i;
-        }
-        return jumlahSoto;
+static void terjual(){
+    int totNasgor = 0;
+    int totSoto = 0;
+    int totSate = 0;
+    
+    for (int a = 0; a < porsi[0].length; a++){
+       totNasgor = totNasgor + porsi[0][a];
+       totSoto = totSoto + porsi[1][a];
+       totSate = totSate + porsi[2][a]; 
     }
-
-    static int Sate() {
-        byte i = 0;
-        int jumlahSate = 0;
-        while (i < porsi[0].length) {
-            jumlahSate += porsi[2][i];
-            ++i;
-        }
-        return jumlahSate;
-    }
-
-        fav();
-        System.out.println();
-        System.out.println("Jumlah pemasukan dari Senin sampai Jum'at adalah " + totalKeuntungan());
-        System.out.println();
-        System.out.println("Jumlah porsi yang terjual untuk Nasi Goreng adalah " + NasiGoreng());
-        System.out.println("Jumlah porsi yang terjual untuk Soto adalah " + Soto());
-        System.out.println("Jumlah porsi yang terjual untuk Sate adalah " + Sate());
-
-
+     System.out.println("\nTotal menu makanan yang terjual");
+     System.out.println("Total Nasi goreng yang terjual : " + totNasgor);
+     System.out.println("Jumlah Soto yang terjual : " + totSoto);
+     System.out.println("Jumlah Sate yang terjual : " + totSate);
+}
+kesukaan1();
+   kesukaan2();
+   pendapatan();
+   terjual();
 ```
 
-    Menu favorit pada hari Selasa adalah Soto
-    Menu favorit pada hari Jum'at adalah Nasi Goreng
     
-    Jumlah pemasukan dari Senin sampai Jum'at adalah 8625000
+    Menu Favorit
     
-    Jumlah porsi yang terjual untuk Nasi Goreng adalah 164
-    Jumlah porsi yang terjual untuk Soto adalah 143
-    Jumlah porsi yang terjual untuk Sate adalah 128
+    Menu makanan favorit di Hari Selasa adalahSoto
+    
+    Menu makanan favorit di Hari Jum'at adalahNasi Goreng
+    
+    Pendapatan Rumah Makan
+    Pendapatan Rumah Makan setiap hari Senin - Jum'at sekitar Rp 8625000.0
+    
+    Total menu makanan yang terjual
+    Total Nasi goreng yang terjual : 164
+    Jumlah Soto yang terjual : 143
+    Jumlah Sate yang terjual : 128
 
-
-diawal menginisialisasi array secara global. fungsi fav() berfungsi untuk mencari menu favoit. fungsi totalKeuntungan() akan menjumlah secara horizontal kemudian tiap barisnya akan dikalikan dengan harganya.fungsi NasiGoreng(), Soto(), Sate() akan mengembalikan nilai jumlah dari tiap tiap baris yang merepresentasikan jumlah tiap menu.
