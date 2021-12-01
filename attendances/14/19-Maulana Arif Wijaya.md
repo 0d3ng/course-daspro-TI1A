@@ -321,6 +321,16 @@ Berikut ini adalah ilustrasinya dalam bentuk tabel.
 
 ```Java
 // Tuliskan jawaban tugas nomor 4
+static int Fibonacci(int n,int a,int b,int c){
+    c = a + b;
+    a = b;
+    b = c;
+    if (n == 0){
+        return c;
+    }else{
+        return Fibonacci(n-1,a,b,c);
+    }
+}
 Scanner in = new Scanner(System.in);
 int n1 = 0, n2 = 1,n3 = 0;
 System.out.print("Masukkan Bulan ke berapa : ");
@@ -343,16 +353,6 @@ if (bulan == 1 || bulan == 2){
 System.out.println("Pasangan belum produktif\t= " + pasanganBelumProduktif);
 int totalPasangan = pasanganProduktif + pasanganBelumProduktif;
 System.out.println("total pasangan\t\t\t\t= " + totalPasangan );
-static int Fibonacci(int n,int a,int b,int c){
-    c = a + b;
-    a = b;
-    b = c;
-    if (n == 0){
-        return c;
-    }else{
-        return Fibonacci(n-1,a,b,c);
-    }
-}
 ```
     Jumlah pasangan pada bulan 12
     Pasangan produktif			= 55
