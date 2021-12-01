@@ -88,6 +88,8 @@ System.out.println(faktorialIteratif(5));
 3. Pada Percobaan1, apakah hasil yang diberikan fungsi faktorialRekursif() dan fungsi faktorialIteratif() sama? Jelaskan perbedaan alur jalannya program pada penggunaan fungsi rekursif dan fungsi iteratif!
 
 
+**Jawaban**
+
 1. Fungsi rekursif adalah fungsi yang memanggil dirinya sendiri. Oleh karena itu, proses pemanggilan fungsi akan terjadi secara berulang-ulang.
 
 
