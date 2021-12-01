@@ -74,13 +74,13 @@ System.out.println(faktorialIteratif(5));
 3. Pada Percobaan1, apakah hasil yang diberikan fungsi faktorialRekursif() dan fungsi faktorialIteratif() sama? Jelaskan perbedaan alur jalannya program pada penggunaan fungsi rekursif dan fungsi iteratif!
 
 
-Jawaban : 
+Jawaban :
 
 1. Fungsi rekursif adalah fungsi yang memanggil dirinya sendiri
 
 2. Contoh kasus penggunaan rekursif adalah faktorial, pencarian FPB, perkalian, perpangkatan dan lainnya.
 
-3. Iya, hasil yang diberikan fungsi faktorialRekursif() dan fungsi faktorialIteratif() sama, namun memiliki alur yang berbeda sebagai berikut : 
+3. Iya, hasil yang diberikan fungsi faktorialRekursif() dan fungsi faktorialIteratif() sama, namun memiliki alur yang berbeda sebagai berikut :
 
 fungsi faktorialRekursif memanggil dirinya sendiri dengan parameter berbeda yang terus berkurang satu dari n bilangan hingga kondisi yang ditentukan yaitu hingga n==0
 
@@ -181,24 +181,23 @@ System.out.println(hitungBunga(saldoAwal, tahun));
 
 Base case merupakan nilai batas suatu fungsi rekursif, pada kode diatas yang merupakan base case adalah :
 
-if (tahun == 0) {
-        return (saldo);
+if (tahun == 0) { return (saldo);
 
-Recursion call pada kode diatas adalah : 
+Recursion call pada kode diatas adalah :
 
-else {
-        return (1.11 * hitungBunga(saldo, tahun - 1));
-    }
+else { return (1.11 * hitungBunga(saldo, tahun - 1)); }
+
 recursion call harus mendekati base case disetiap pemanggilan fungsi rekursif, supaya rekursi dapat berhenti
+
 pada kode diatas parameter tahun selalu berkurang setiap pemanggilan fungsi supaya dapat mendekati nilai batas yaitu tahun == 0
+
 ## Tugas
 
 1. Buatlah program untuk menampilkan bilangan n sampai 0 dengan menggunakan fungsi rekursif dan fungsi iteratif. (**DeretDescendingRekursif**).
 
-Menampilkan bilangan dengan fungsi rekursif : 
-
 
 ```Java
+// Tuliskan jawaban tugas nomor 1
 import java.util.Scanner;
 Scanner sc = new Scanner(System.in);
 int n;
@@ -227,9 +226,12 @@ System.out.println(fungsiRekursif(n));
     1
     0
 
-Penjelasan : 
+
+Penjelasan :
+
 fungsiRekursif memanggil dirinya sendiri dengan parameter berbeda yang terus berkurang satu dari n bilangan hingga kondisi yang ditentukan yaitu hingga n==0, dimana selama kondisi n==0 belum terpenuhi, dicetak n dan selanjutnya parameter bilangan n - 1 dikirim dalam rekursif. Dan apabila n==0 (pemanggilan yang terakhir), dilakukan return 0.
-Menampilkan bilangan dengan fungsi iteratif(perulangan) : 
+
+-Menampilkan bilangan dengan fungsi iteratif(perulangan) :
 
 
 ```Java
@@ -255,8 +257,11 @@ fungsiIteratif(n);
     1
     0
 
+
 Penjelasan : 
+
 fungsiIteratif memiliki alur pemrograman dengan menggunakan perulangan for yaitu dengan melakukan perulangan dari i=n hingga i=0 dan disetiap perulangan dilakukan pencetakan i, kemudian i dikurangi 1.
+
 2. Buatlah program yang di dalamnya terdapat fungsi rekursif untuk menghitung bilangan faktorial. Misalniya f = 8, maka akan dihasilkan 1+2+3+4+5+6+7+8 = 36 (**PenjumlahanRekursif**).
 
 
@@ -281,9 +286,8 @@ System.out.println(penjumlahanRekursif(n));
     Masukkan bilangan : 8
     36
 
+
 Penjelasan : fungsi penjumlahanRekursif memanggil dirinya sendiri dengan parameter berbeda yang terus bertambah satu dari n==1 hingga kondisi yang ditentukan yaitu hingga n==bilangan, dimana selama kondisi n==bilangan belum terpenuhi, return n + penjumlahanRekursif(n+1) dan selanjutnya parameter bilangan n + 1 dikirim dalam rekursif. Dan apabila n==bilangan (pemanggilan yang terakhir), dilakukan return n.
-Penjelasan : 
-Alur pemrograman sama seperti faktorialRekursif pada percobaan 1, namun simbol perkalian pada fungsi tersebut, diubah dengan simbol penjumlahan.
 
 3.	Buat program yang di dalamnya terdapat fungsi rekursif untuk mengecek apakah suatu bilangan n merupakan bilangan prima atau bukan. n dikatakan bukan bilangan prima jika ia habis dibagi dengan bilangan kurang dari n. (**CekPrimaRekursif**).
 
@@ -311,17 +315,22 @@ static void CekPrimaRekursif(int bilangan, int divider){
 }CekPrimaRekursif(n, n);
 ```
 
-    Masukkan bilangan yang ingin di check : 3
-    3 adalah bilangan prima
+    Masukkan bilangan yang ingin di check : 139
+    139 adalah bilangan prima
+
 
 Penjelasan : 
 - Diinputkan sebuah bilangan, dimana bilangan tersebut akan disimpan kedalam variable n
 - Membuat fungsi CekPrimaRekursif, dengan parameter pertama adalah bilangan dan parameter kedua adalah divider (pembaginya)
 - Parameter bilangan dan parameter divider diisi dengan bilangan yang diinputkan (n)
 a) Apabila bilangan < 2 maka bilangan tersebut bukan bilangan prima
+
 b) Apabila pembagi > 2 :
+
 Jika bilangan (operand 1) modulus (%) pembagi (operand 2) yang dilakukan satu persatu mulai pembaginya adalah n-1 hingga pembaginya adalah 2, dan bilangan terbagi habis maka bilangan tersebut bukan bilangan prima.
+
 Namun jika bilangan (operand 1) modulus (%) pembagi (operand 2) yang dilakukan satu persatu mulai pembaginya adalah n-1 hingga pembaginya adalah 2, dan bilangan tidak terbagi habis maka bilangan tersebut adalah bilangan prima.
+
 4.	Sepasang marmut yang baru lahir (jantan dan betina) ditempatkan pada suatu pembiakan.  Setelah dua bulan pasangan marmut tersebut melahirkan sepasang marmut kembar (jantan dan betina). Setiap pasangan marmut yang lahir juga akan melahirkan sepasang marmut juga setiap 2 bulan.  Berapa pasangan marmut yang ada pada akhir bulan ke-12? Buatlah programnya menggunakan fungsi rekursif! (**Fibonacci**).
 Berikut ini adalah ilustrasinya dalam bentuk tabel.
 
@@ -353,16 +362,30 @@ System.out.println(fibonacciRekursif(n));
 
 Penjelasan :
 
-Seperti yang tertera pada tabel diatas, bahwa pada bulan satu atau bulan 2 total pasangannya adalah 1, sehingga dapat kita tulis sebagai berikut : 
+Seperti yang tertera pada tabel diatas, bahwa pada bulan satu atau bulan 2 total pasangannya adalah 1, sehingga dapat kita tulis sebagai berikut :
+
+
+```Java
 static int fibonacciRekursif (int n){
     if(n==1 || n==2){
         return 1;
-    }Lalu, dilihat dari polanya bahwa :
+    }
+```
+
+
+```Java
+Lalu, dilihat dari polanya bahwa :
 total pasangan bulan 3 = total pasangan bulan 2 + total pasangan bulan 1
 total pasangan bulan 4 = total pasangan bulan 3 + total pasangan bulan 2
 total pasangan bulan 5 = total pasangan bulan 4 + total pasangan bulan 3
 dan seterusnya.
 Sehingga : 
-Total pasangan bulan ke-n = total pasangan bulan ke-(n-1) + total pasangan bulan ke-(n-2) Contoh : 
+Total pasangan bulan ke-n = total pasangan bulan ke-(n-1) + total pasangan bulan ke-(n-2) 
+```
+
+
+```Java
+Contoh : 
 fibonacciRekursif (3), maka : 
 fibonacciRekursif (2) + fibonacciRekursif (1) = 1 + 1 = 2
+```
