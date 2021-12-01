@@ -202,15 +202,6 @@ else{
 
 ```Java
 // Tuliskan jawaban tugas nomor 1
-
-//fungsi rekursif
-Scanner in = new Scanner(System.in);
-System.out.print("Masukkan angka : ");
-int number = in.nextInt();
-System.out.print("urutan angka menggunakan fungsi rekursif = " );
-deretDescendingRekursif(number);
-System.out.print("urutan angka menggunakan fungsi iteratif = ");
-deretDescendingIteratif(number);
 static void deretDescendingRekursif(int n){
     if (n == 0){
         System.out.println(n);
@@ -224,6 +215,13 @@ static void deretDescendingIteratif(int n){
         System.out.print(i + " ");
     }
 }
+Scanner in = new Scanner(System.in);
+System.out.print("Masukkan angka : ");
+int number = in.nextInt();
+System.out.print("urutan angka menggunakan fungsi rekursif = " );
+deretDescendingRekursif(number);
+System.out.print("urutan angka menggunakan fungsi iteratif = ");
+deretDescendingIteratif(number);
 ```
     Masukkan angka : 9
     urutan angka menggunakan fungsi rekursif = 9 8 7 6 5 4 3 2 1 0
