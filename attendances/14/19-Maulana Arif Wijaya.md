@@ -202,15 +202,6 @@ else{
 
 ```Java
 // Tuliskan jawaban tugas nomor 1
-
-//fungsi rekursif
-Scanner in = new Scanner(System.in);
-System.out.print("Masukkan angka : ");
-int number = in.nextInt();
-System.out.print("urutan angka menggunakan fungsi rekursif = " );
-deretDescendingRekursif(number);
-System.out.print("urutan angka menggunakan fungsi iteratif = ");
-deretDescendingIteratif(number);
 static void deretDescendingRekursif(int n){
     if (n == 0){
         System.out.println(n);
@@ -224,6 +215,13 @@ static void deretDescendingIteratif(int n){
         System.out.print(i + " ");
     }
 }
+Scanner in = new Scanner(System.in);
+System.out.print("Masukkan angka : ");
+int number = in.nextInt();
+System.out.print("urutan angka menggunakan fungsi rekursif = " );
+deretDescendingRekursif(number);
+System.out.print("urutan angka menggunakan fungsi iteratif = ");
+deretDescendingIteratif(number);
 ```
     Masukkan angka : 9
     urutan angka menggunakan fungsi rekursif = 9 8 7 6 5 4 3 2 1 0
@@ -321,6 +319,16 @@ Berikut ini adalah ilustrasinya dalam bentuk tabel.
 
 ```Java
 // Tuliskan jawaban tugas nomor 4
+static int Fibonacci(int n,int a,int b,int c){
+    c = a + b;
+    a = b;
+    b = c;
+    if (n == 0){
+        return c;
+    }else{
+        return Fibonacci(n-1,a,b,c);
+    }
+}
 Scanner in = new Scanner(System.in);
 int n1 = 0, n2 = 1,n3 = 0;
 System.out.print("Masukkan Bulan ke berapa : ");
@@ -343,16 +351,6 @@ if (bulan == 1 || bulan == 2){
 System.out.println("Pasangan belum produktif\t= " + pasanganBelumProduktif);
 int totalPasangan = pasanganProduktif + pasanganBelumProduktif;
 System.out.println("total pasangan\t\t\t\t= " + totalPasangan );
-static int Fibonacci(int n,int a,int b,int c){
-    c = a + b;
-    a = b;
-    b = c;
-    if (n == 0){
-        return c;
-    }else{
-        return Fibonacci(n-1,a,b,c);
-    }
-}
 ```
     Jumlah pasangan pada bulan 12
     Pasangan produktif			= 55
