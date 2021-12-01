@@ -469,4 +469,128 @@ Buatlah Fungsi sebagai berikut:
 
 ```Java
 // Tuliskan jawaban nomor 2
+import java.util.Scanner;
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+/**
+ *
+ * @author HP
+ */
+public class fikri {
+
+    static void terbanyak(int a, int b, int c) {
+
+        if (a > b && a > c) {
+            System.out.println("Menu favorit adalah Nasi Goreng");
+        } else if (b > a && b > c) {
+            System.out.println("Menu favorit adalah Soto");
+        } else {
+            System.out.println("Menu favorit adalah Sate");
+        }
+    }
+
+    static int total() {
+        Scanner in = new Scanner(System.in);
+        int nasigoreng, soto, sate, total = 0;
+
+        System.out.print("Masukkan total porsi Nasi Goreng yang terjual : ");
+        nasigoreng = in.nextInt();
+
+        System.out.print("Masukkan total porsi Soto yang terjual        : "
+                + " yang terjual        : ");
+        soto = in.nextInt();
+
+        System.out.print("Masukkan total porsi Sate yang terjual        : ");
+        sate = in.nextInt();
+
+        nasigoreng *= 20000;
+        soto *= 15000;
+        sate *= 25000;
+
+        total += nasigoreng + soto + sate;
+        System.out.println("Total pendapatan : " + total);
+        return total;
+    }
+
+    static void porsi() {
+        Scanner sc = new Scanner(System.in);
+        int nasigoreng, soto, sate, total;
+        System.out.print("Jumlah Nasi Goreng yang terjual : ");
+        nasigoreng = sc.nextInt();
+        System.out.print("Jumlah Soto yang terjual        : ");
+        soto = sc.nextInt();
+        System.out.print("Jumlah Sate yang terjual        : ");
+        sate = sc.nextInt();
+
+        total = nasigoreng + soto + sate;
+        System.out.println("Jumlah porsi yang terjual adalah : " + total);
+    }
+
+    public static void main(String[] args) {
+        int totalSenin, totalSelasa, totalRabu, totalKamis, totalJumat = 0;
+        Scanner input = new Scanner(System.in);
+        System.out.println("--- Menu Favorit Hari Selasa ---");
+        System.out.print("Masukkan jumlah Nasi Goreng yang terjual pada hari Selasa : ");
+        int nasgor = input.nextInt();
+        System.out.print("Masukkan jumlah Soto yang terjual pada hari Selasa        : ");
+        int soto = input.nextInt();
+        System.out.print("Masukkan jumlah Sate yang terjual pada hari Selasa        : ");
+        int sate = input.nextInt();
+        terbanyak(nasgor, soto, sate);
+        System.out.println("");
+
+        System.out.println("--- Menu Favorit Hari Jumat ---");
+        System.out.print("Masukkan jumlah Nasi Goreng yang terjual pada hari Jumat : ");
+        int nasgor2 = input.nextInt();
+        System.out.print("Masukkan jumlah Soto yang terjual pada hari Jumat        : ");
+        int soto2 = input.nextInt();
+        System.out.print("Masukkan jumlah Sate yang terjual pada hari Jumat        : ");
+        int sate2 = input.nextInt();
+        terbanyak(nasgor2, soto2, sate2);
+        System.out.println("");
+
+        System.out.println("--- Menghitung Pemasukan Pada Hari Senin ---");
+        totalSenin = total();
+        System.out.println("");
+        System.out.println("--- Menghitung Pemasukan Pada Hari Selasa ---");
+        totalSelasa=total();
+        System.out.println("");
+        System.out.println("--- Menghitung Pemasukan Pada Hari Rabu ---");
+        totalRabu = total();
+        System.out.println("");
+        System.out.println("--- Menghitung Pemasukan Pada Hari Kamis ---");
+        totalKamis = total();
+        System.out.println("");
+        System.out.println("--- Menghitung Pemasukan Pada Hari Jumat ---");
+        totalJumat = total();
+        int totalSemua = totalSenin+totalSelasa+totalRabu+totalKamis+totalJumat;
+        System.out.println("");
+        System.out.println("Total pendapatan dari Senin sampai Jumat : Rp "+totalSemua);
+        System.out.println("");
+
+        System.out.println("--- Menghitung jumlah porsi Pada Hari Senin ---");
+        porsi();
+        System.out.println("");
+
+        System.out.println("--- Menghitung jumlah porsi Pada Hari Selasa ---");
+        porsi();
+        System.out.println("");
+
+        System.out.println("--- Menghitung jumlah porsi Pada Hari Rabu ---");
+        porsi();
+        System.out.println("");
+
+        System.out.println("--- Menghitung jumlah porsi Pada Hari Kamis ---");
+        porsi();
+        System.out.println("");
+
+        System.out.println("--- Menghitung jumlah porsi Pada Hari Jumat ---");
+        porsi();
+        System.out.println("");
+    }
+}
 ```
